@@ -38,7 +38,10 @@ static void update_window_notifications(void)
         })
     }
 
-    SLSRequestNotificationsForWindows(g_connection, window_list, window_count);
+    CGError result = SLSRequestNotificationsForWindows(g_connection, window_list, window_count);
+    if (result != kCGErrorSuccess) {
+        debug("%s: failed with error %d\n", __FUNCTION__, result);
+    }
     free(window_list);
 }
 
