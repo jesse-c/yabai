@@ -329,7 +329,7 @@ int main(int argc, char **argv)
     SLSRegisterConnectionNotifyProc(g_connection, connection_handler, 808, NULL);
     SLSRegisterConnectionNotifyProc(g_connection, connection_handler, 1202, NULL);
 
-    if (workspace_is_macos_sequoia() || workspace_is_macos_tahoe()) {
+    if (workspace_is_macos_sequoia_or_newer()) {
         SLSRegisterConnectionNotifyProc(g_connection, connection_handler, 804, NULL);
     }
 
@@ -337,7 +337,7 @@ int main(int argc, char **argv)
     space_manager_begin(&g_space_manager);
     window_manager_begin(&g_space_manager, &g_window_manager);
 
-    if (workspace_is_macos_sequoia() || workspace_is_macos_tahoe()) {
+    if (workspace_is_macos_sequoia_or_newer()) {
         update_window_notifications();
     }
 

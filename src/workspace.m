@@ -25,6 +25,12 @@ bool workspace_use_macos_space_workaround(void)
     return os_version.majorVersion >= 15;
 }
 
+bool workspace_is_macos_sequoia_or_newer(void)
+{
+    NSOperatingSystemVersion os_version = [[NSProcessInfo processInfo] operatingSystemVersion];
+    return os_version.majorVersion >= 15;
+}
+
 void *workspace_application_create_running_ns_application(struct process *process)
 {
     return [[NSRunningApplication runningApplicationWithProcessIdentifier:process->pid] retain];
