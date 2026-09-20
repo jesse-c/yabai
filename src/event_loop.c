@@ -14,6 +14,9 @@ volatile uint64_t __last_gesture_time;
 volatile uint64_t __last_cmd_tab_time;
 static bool window_notification_update_pending;
 
+static void validate_windows_after_focus(uint32_t focused_window_id);
+static void schedule_window_validation(void);
+
 static void update_window_notifications(void)
 {
     int window_count = 0;
@@ -420,6 +423,7 @@ static EVENT_HANDLER(APPLICATION_FRONT_SWITCHED)
     }
 
     uint32_t application_focused_window_id = application_focused_window(application);
+    schedule_window_validation();
     if (!application_focused_window_id) {
         struct window *focused_window = window_manager_find_window(&g_window_manager, g_window_manager.focused_window_id);
         if (focused_window) {
@@ -660,6 +664,50 @@ static EVENT_HANDLER(WINDOW_DESTROYED)
     }
 }
 
+static void validate_windows_after_focus(uint32_t focused_window_id)
+{
+    int window_count = 0;
+    uint32_t window_list[1024] = {0};
+
+    table_for (struct window *window, g_window_manager.window, {
+        if (window->id != focused_window_id &&
+            window_manager_find_managed_window(&g_window_manager, window) &&
+            window_count < array_count(window_list)) {
+            window_list[window_count++] = window->id;
+        }
+    })
+
+    for (int i = 0; i < window_count; ++i) {
+        struct window *window = window_manager_find_window(&g_window_manager, window_list[i]);
+        if (!window) continue;
+
+        if (!__sync_bool_compare_and_swap(&window->id_ptr, &window->id, &window->id)) {
+            continue;
+        }
+
+        int owner = 0;
+        CGError result = SLSGetWindowOwner(g_connection, window->id, &owner);
+        if (result == kCGErrorSuccess && owner == window->application->connection) {
+            continue;
+        }
+
+        debug("%s: removing vanished window %d after focus changed\n", __FUNCTION__, window->id);
+        EVENT_HANDLER_WINDOW_DESTROYED(window, 0);
+    }
+}
+
+static void schedule_window_validation(void)
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.25f * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        event_loop_post(&g_event_loop, WINDOW_VALIDATION, NULL, 0);
+    });
+}
+
+static EVENT_HANDLER(WINDOW_VALIDATION)
+{
+    validate_windows_after_focus(g_window_manager.focused_window_id);
+}
+
 static EVENT_HANDLER(WINDOW_FOCUSED)
 {
     __atomic_store_n(&__pending_window_focus, false, __ATOMIC_RELEASE);
@@ -696,6 +744,7 @@ static EVENT_HANDLER(WINDOW_FOCUSED)
     }
 
     window_did_receive_focus(&g_window_manager, &g_mouse_state, window);
+    schedule_window_validation();
     event_signal_push(SIGNAL_WINDOW_FOCUSED, window);
 }
 
