@@ -1642,8 +1642,7 @@ static EVENT_HANDLER(DOCK_DID_RESTART)
     if (workspace_is_macos_monterey() ||
         workspace_is_macos_ventura() ||
         workspace_is_macos_sonoma() ||
-        workspace_is_macos_sequoia() ||
-        workspace_is_macos_tahoe()) {
+        workspace_is_macos_sequoia_or_newer()) {
         mission_control_unobserve();
         mission_control_observe();
     }
