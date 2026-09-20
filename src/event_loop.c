@@ -16,7 +16,15 @@ volatile uint64_t __last_cmd_tab_time;
 static void update_window_notifications(void)
 {
     int window_count = 0;
-    uint32_t window_list[1024] = {0};
+    int window_capacity = workspace_is_macos_sequoia_or_newer()
+                        ? g_window_manager.window.count
+                        : g_window_manager.insert_feedback.count;
+    uint32_t *window_list = window_capacity ? malloc(sizeof(uint32_t) * window_capacity) : NULL;
+
+    if (window_capacity && !window_list) {
+        debug("%s: failed to allocate window list\n", __FUNCTION__);
+        return;
+    }
 
     if (workspace_is_macos_sequoia_or_newer()) {
         // NOTE(asmvik): Subscribe to all windows because of window_destroyed (and ordered) notifications
@@ -31,6 +39,7 @@ static void update_window_notifications(void)
     }
 
     SLSRequestNotificationsForWindows(g_connection, window_list, window_count);
+    free(window_list);
 }
 
 static void window_did_receive_focus(struct window_manager *wm, struct mouse_state *ms, struct window *window)
