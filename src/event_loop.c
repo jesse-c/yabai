@@ -12,6 +12,7 @@ volatile bool __pending_window_focus;
 volatile bool __pending_gesture;
 volatile uint64_t __last_gesture_time;
 volatile uint64_t __last_cmd_tab_time;
+static bool window_notification_update_pending;
 
 static void update_window_notifications(void)
 {
@@ -43,6 +44,20 @@ static void update_window_notifications(void)
         debug("%s: failed with error %d\n", __FUNCTION__, result);
     }
     free(window_list);
+}
+
+static void schedule_window_notification_update(void)
+{
+    if (!__sync_bool_compare_and_swap(&window_notification_update_pending, false, true)) return;
+    event_loop_post(&g_event_loop, WINDOW_NOTIFICATIONS_UPDATE, NULL, 0);
+}
+
+static EVENT_HANDLER(WINDOW_NOTIFICATIONS_UPDATE)
+{
+    (void) context;
+    (void) param1;
+    __atomic_store_n(&window_notification_update_pending, false, __ATOMIC_RELEASE);
+    update_window_notifications();
 }
 
 static void window_did_receive_focus(struct window_manager *wm, struct mouse_state *ms, struct window *window)
@@ -255,7 +270,7 @@ static EVENT_HANDLER(APPLICATION_LAUNCHED)
     }
 
     if (workspace_is_macos_sequoia_or_newer()) {
-        update_window_notifications();
+        schedule_window_notification_update();
     }
 }
 
@@ -349,7 +364,7 @@ static EVENT_HANDLER(APPLICATION_TERMINATED)
     }
 
     if (workspace_is_macos_sequoia_or_newer()) {
-        update_window_notifications();
+        schedule_window_notification_update();
     }
 
 out:
@@ -608,7 +623,7 @@ static EVENT_HANDLER(WINDOW_CREATED)
     }
 
     if (workspace_is_macos_sequoia_or_newer()) {
-        update_window_notifications();
+        schedule_window_notification_update();
     }
 }
 
@@ -641,7 +656,7 @@ static EVENT_HANDLER(WINDOW_DESTROYED)
     window_destroy(window);
 
     if (workspace_is_macos_sequoia_or_newer()) {
-        update_window_notifications();
+        schedule_window_notification_update();
     }
 }
 
