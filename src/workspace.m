@@ -1,6 +1,8 @@
 bool workspace_event_handler_begin(void **context)
 {
     NSOperatingSystemVersion version = [[NSProcessInfo processInfo] operatingSystemVersion];
+    _workspace_macos_major_version = (int) version.majorVersion;
+    _workspace_macos_minor_version = (int) version.minorVersion;
 #define SUPPORT_MACOS_VERSION(name, major_version) _workspace_is_macos_version_##name = version.majorVersion == major_version;
     SUPPORTED_MACOS_VERSION_LIST
 #undef SUPPORT_MACOS_VERSION
@@ -16,19 +18,21 @@ bool workspace_event_handler_begin(void **context)
 
 bool workspace_use_macos_space_workaround(void)
 {
-    NSOperatingSystemVersion os_version = [[NSProcessInfo processInfo] operatingSystemVersion];
+    if (_workspace_macos_major_version == 12 && _workspace_macos_minor_version >= 7) return true;
+    if (_workspace_macos_major_version == 13 && _workspace_macos_minor_version >= 6) return true;
+    if (_workspace_macos_major_version == 14 && _workspace_macos_minor_version >= 5) return true;
 
-    if (os_version.majorVersion == 12 && os_version.minorVersion >= 7) return true;
-    if (os_version.majorVersion == 13 && os_version.minorVersion >= 6) return true;
-    if (os_version.majorVersion == 14 && os_version.minorVersion >= 5) return true;
-
-    return os_version.majorVersion >= 15;
+    return _workspace_macos_major_version >= 15;
 }
 
 bool workspace_is_macos_sequoia_or_newer(void)
 {
-    NSOperatingSystemVersion os_version = [[NSProcessInfo processInfo] operatingSystemVersion];
-    return os_version.majorVersion >= 15;
+    return _workspace_macos_major_version >= 15;
+}
+
+bool workspace_is_macos_tahoe_or_newer(void)
+{
+    return _workspace_macos_major_version >= 26;
 }
 
 void *workspace_application_create_running_ns_application(struct process *process)

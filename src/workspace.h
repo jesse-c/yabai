@@ -18,6 +18,9 @@ static inline bool workspace_is_macos_##name(void) \
     SUPPORTED_MACOS_VERSION_LIST
 #undef SUPPORT_MACOS_VERSION
 
+static int _workspace_macos_major_version;
+static int _workspace_macos_minor_version;
+
 @interface workspace_context : NSObject {
 }
 - (id)init;
@@ -36,5 +39,6 @@ pid_t workspace_get_dock_pid(void);
 bool workspace_event_handler_begin(void **context);
 bool workspace_use_macos_space_workaround(void);
 bool workspace_is_macos_sequoia_or_newer(void);
+bool workspace_is_macos_tahoe_or_newer(void);
 
 #endif
