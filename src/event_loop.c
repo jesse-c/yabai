@@ -13,9 +13,10 @@ volatile bool __pending_gesture;
 volatile uint64_t __last_gesture_time;
 volatile uint64_t __last_cmd_tab_time;
 static bool window_notification_update_pending;
+static bool window_validation_pending;
 
-static void validate_windows_after_focus(uint32_t focused_window_id);
-static void schedule_window_validation(void);
+static void validate_windows_after_focus(uint32_t focused_window_id, bool is_retry);
+static void schedule_window_validation(bool is_retry);
 
 static void update_window_notifications(void)
 {
@@ -307,7 +308,7 @@ static EVENT_HANDLER(APPLICATION_TERMINATED)
     for (int i = 0; i < window_count; ++i) {
         struct window *window = window_list[i];
 
-        if (!__sync_bool_compare_and_swap(&window->id_ptr, &window->id, NULL)) {
+        if (!window_claim_for_destruction(window)) {
             window->application = NULL;
             continue;
         }
@@ -423,7 +424,7 @@ static EVENT_HANDLER(APPLICATION_FRONT_SWITCHED)
     }
 
     uint32_t application_focused_window_id = application_focused_window(application);
-    schedule_window_validation();
+    schedule_window_validation(false);
     if (!application_focused_window_id) {
         struct window *focused_window = window_manager_find_window(&g_window_manager, g_window_manager.focused_window_id);
         if (focused_window) {
@@ -664,15 +665,21 @@ static EVENT_HANDLER(WINDOW_DESTROYED)
     }
 }
 
-static void validate_windows_after_focus(uint32_t focused_window_id)
+static void validate_windows_after_focus(uint32_t focused_window_id, bool is_retry)
 {
     int window_count = 0;
-    uint32_t window_list[1024] = {0};
+    int window_capacity = g_window_manager.window.count;
+    uint32_t *window_list = window_capacity ? malloc(sizeof(uint32_t) * window_capacity) : NULL;
+    bool retry_required = false;
+
+    if (window_capacity && !window_list) {
+        debug("%s: failed to allocate window list\n", __FUNCTION__);
+        return;
+    }
 
     table_for (struct window *window, g_window_manager.window, {
         if (window->id != focused_window_id &&
-            window_manager_find_managed_window(&g_window_manager, window) &&
-            window_count < array_count(window_list)) {
+            window_manager_find_managed_window(&g_window_manager, window)) {
             window_list[window_count++] = window->id;
         }
     })
@@ -687,25 +694,35 @@ static void validate_windows_after_focus(uint32_t focused_window_id)
 
         int owner = 0;
         CGError result = SLSGetWindowOwner(g_connection, window->id, &owner);
-        if (result == kCGErrorSuccess && owner == window->application->connection) {
+        if (result == kCGErrorSuccess) {
+            if (owner == window->application->connection) continue;
+        } else if (!is_retry) {
+            retry_required = true;
             continue;
         }
 
+        if (!window_claim_for_destruction(window)) continue;
         debug("%s: removing vanished window %d after focus changed\n", __FUNCTION__, window->id);
         EVENT_HANDLER_WINDOW_DESTROYED(window, 0);
     }
+
+    free(window_list);
+    if (retry_required) schedule_window_validation(true);
 }
 
-static void schedule_window_validation(void)
+static void schedule_window_validation(bool is_retry)
 {
+    if (!__sync_bool_compare_and_swap(&window_validation_pending, false, true)) return;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.25f * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        event_loop_post(&g_event_loop, WINDOW_VALIDATION, NULL, 0);
+        event_loop_post(&g_event_loop, WINDOW_VALIDATION, NULL, is_retry);
     });
 }
 
 static EVENT_HANDLER(WINDOW_VALIDATION)
 {
-    validate_windows_after_focus(g_window_manager.focused_window_id);
+    (void) context;
+    __atomic_store_n(&window_validation_pending, false, __ATOMIC_RELEASE);
+    validate_windows_after_focus(g_window_manager.focused_window_id, param1 != 0);
 }
 
 static EVENT_HANDLER(WINDOW_FOCUSED)
@@ -744,7 +761,7 @@ static EVENT_HANDLER(WINDOW_FOCUSED)
     }
 
     window_did_receive_focus(&g_window_manager, &g_mouse_state, window);
-    schedule_window_validation();
+    schedule_window_validation(false);
     event_signal_push(SIGNAL_WINDOW_FOCUSED, window);
 }
 
@@ -1033,7 +1050,7 @@ static EVENT_HANDLER(SLS_WINDOW_DESTROYED)
     struct window *window = window_manager_find_window(&g_window_manager, wid);
     if (!window) return;
 
-    if (!__sync_bool_compare_and_swap(&window->id_ptr, &window->id, &window->id)) {
+    if (!window_claim_for_destruction(window)) {
         debug("%s: %d has been marked invalid by the system, ignoring event..\n", __FUNCTION__, wid);
         return;
     }

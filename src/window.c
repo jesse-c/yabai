@@ -20,12 +20,22 @@ bool window_observe(struct window *window)
 
 void window_unobserve(struct window *window)
 {
+    if (!window->application) {
+        window->notification = 0;
+        return;
+    }
+
     for (int i = 0; i < array_count(ax_window_notification); ++i) {
         if (!(window->notification & (1 << i))) continue;
 
         AXObserverRemoveNotification(window->application->observer_ref, window->ref, ax_window_notification[i]);
         window->notification &= ~(1 << i);
     }
+}
+
+bool window_claim_for_destruction(struct window *window)
+{
+    return __sync_bool_compare_and_swap(&window->id_ptr, &window->id, NULL);
 }
 
 CFStringRef window_display_uuid(uint32_t wid)
