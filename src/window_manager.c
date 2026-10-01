@@ -2554,6 +2554,7 @@ static void window_manager_validate_windows_on_space(struct window_manager *wm, 
         if (!found) {
             struct window *window = window_manager_find_window(wm, view_window_list[i]);
             if (!window) continue;
+            debug("%s: removing window %d from space %llu: absent from snapshot (%d windows)\n", __FUNCTION__, window->id, view->sid, window_count);
 
             //
             // @cleanup
@@ -2602,6 +2603,7 @@ static void window_manager_check_for_windows_on_space(struct window_manager *wm,
         }
 
         if (!existing_view || (existing_view->layout != VIEW_FLOAT && existing_view != view)) {
+            debug("%s: adding window %d to space %llu\n", __FUNCTION__, window->id, view->sid);
 
             //
             // @cleanup
@@ -2627,7 +2629,12 @@ void window_manager_validate_and_check_for_windows_on_space(struct space_manager
     if (view->layout == VIEW_FLOAT) return;
 
     int window_count = 0;
-    uint32_t *window_list = space_window_list(sid, &window_count, false);
+    uint32_t *window_list = NULL;
+    // A failed query is not evidence that the space became empty.
+    if (!space_window_list_checked(sid, &window_count, false, &window_list)) {
+        debug("%s: preserving layout on space %llu after window query failed\n", __FUNCTION__, sid);
+        return;
+    }
     window_manager_validate_windows_on_space(wm, view, window_list, window_count);
     window_manager_check_for_windows_on_space(wm, view, window_list, window_count);
 

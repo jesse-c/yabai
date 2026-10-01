@@ -25,3 +25,7 @@ This is a source-confirmed reset path and a plausible contributor to the reporte
 Installed binary: `~/.local/bin/yabai-fork`, SHA-256 `77649dde102a46f029acac5459f01f8cf76cba4f441242cf91f0ffcd36002238`, identical to the signed checkout build. The service is running and queries succeed. The required restart rebuilt layouts once; subsequent repeated layout commands retained the checked arrangement.
 
 The previous performance-only installation is backed up temporarily at `/tmp/yabai-performance-changes/yabai-fork.performance-before-space-fix`. The pre-performance installation remains at `/tmp/yabai-performance-changes/yabai-fork.before`. Temporary backups may be removed by macOS.
+
+## Follow-up — 2026-10-02
+
+The user reported another swap. [Further tracing](space-switch-investigation-2026-10-02.md) identified a hide/show placement change and deliberate swap commands, but did not capture the earlier unexplained incident. A separate query-failure guard was deployed; the hashes and live results above describe the earlier layout-only patch.

@@ -1,0 +1,4105 @@
+{
+  "metadata": {
+    "installed_sha256": "77649dde102a46f029acac5459f01f8cf76cba4f441242cf91f0ffcd36002238",
+    "daemon_pid": "75154",
+    "original_debug": "off",
+    "started_at": "2026-10-02T00:04:36+0100"
+  },
+  "snapshots": [
+    {
+      "t": 0.0,
+      "windows": [
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 6.999,
+      "windows": [
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 12.877,
+      "windows": [
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 13.086,
+      "windows": [
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 13.959,
+      "windows": [
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 14.829,
+      "windows": [
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 15.507,
+      "windows": [
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 16.519,
+      "windows": [
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 1104.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 17.568,
+      "windows": [
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 1104.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 18.368,
+      "windows": [
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 19.24,
+      "windows": [
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 19.461,
+      "windows": [
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 21.407,
+      "windows": [
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 22.47,
+      "windows": [
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 23.113,
+      "windows": [
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 24.87,
+      "windows": [
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 36.163,
+      "windows": [
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 38.514,
+      "windows": [
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 39.376,
+      "windows": [
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 39.867,
+      "windows": [
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 44.994,
+      "windows": [
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 48.762,
+      "windows": [
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 50.244,
+      "windows": [
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 56.082,
+      "windows": [
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    },
+    {
+      "t": 56.287,
+      "windows": [
+        {
+          "id": 103,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 1776.0,
+            "h": 1105.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": true,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 1414,
+          "pid": 2219,
+          "app": "Safari",
+          "frame": {
+            "x": 12.0,
+            "y": 608.0,
+            "w": 885.0,
+            "h": 549.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 868,
+          "pid": 2588,
+          "app": "Ghostty",
+          "frame": {
+            "x": 903.0,
+            "y": 52.0,
+            "w": 885.0,
+            "h": 1105.0
+          },
+          "space": 2,
+          "split-type": "vertical",
+          "split-child": "second_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 832,
+          "pid": 78383,
+          "app": "Emacs",
+          "frame": {
+            "x": 12.0,
+            "y": 52.0,
+            "w": 881.0,
+            "h": 544.0
+          },
+          "space": 2,
+          "split-type": "horizontal",
+          "split-child": "first_child",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": false,
+          "is-floating": false
+        },
+        {
+          "id": 119,
+          "pid": 2321,
+          "app": "Mail",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 128,
+          "pid": 2347,
+          "app": "Reminders",
+          "frame": {
+            "x": 530.0,
+            "y": 181.0,
+            "w": 740.0,
+            "h": 807.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        },
+        {
+          "id": 514,
+          "pid": 31135,
+          "app": "Beeper",
+          "frame": {
+            "x": 229.0,
+            "y": 166.0,
+            "w": 1341.0,
+            "h": 837.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": true
+        },
+        {
+          "id": 547,
+          "pid": 31259,
+          "app": "Messages",
+          "frame": {
+            "x": 910.0,
+            "y": 366.0,
+            "w": 660.0,
+            "h": 320.0
+          },
+          "space": 1,
+          "split-type": "none",
+          "split-child": "none",
+          "has-ax-reference": true,
+          "is-visible": false,
+          "is-minimized": false,
+          "is-hidden": true,
+          "is-floating": false
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "t": 6.999,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Ghostty (2588)"
+    },
+    {
+      "t": 6.999,
+      "line": "EVENT_HANDLER_SPACE_CHANGED: 3"
+    },
+    {
+      "t": 13.086,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Safari (2219)"
+    },
+    {
+      "t": 13.086,
+      "line": "EVENT_HANDLER_SPACE_CHANGED: 1"
+    },
+    {
+      "t": 13.959,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Ghostty (2588)"
+    },
+    {
+      "t": 13.959,
+      "line": "EVENT_HANDLER_SPACE_CHANGED: 3"
+    },
+    {
+      "t": 14.829,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Emacs (78383)"
+    },
+    {
+      "t": 15.507,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Safari (2219)"
+    },
+    {
+      "t": 15.852,
+      "line": "EVENT_HANDLER_WINDOW_FOCUSED: Safari 1414"
+    },
+    {
+      "t": 16.293,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Emacs (78383)"
+    },
+    {
+      "t": 16.519,
+      "line": "EVENT_HANDLER_WINDOW_RESIZED: Emacs 832"
+    },
+    {
+      "t": 16.519,
+      "line": "EVENT_HANDLER_WINDOW_RESIZED: Ghostty 868"
+    },
+    {
+      "t": 16.519,
+      "line": "EVENT_HANDLER_WINDOW_MOVED:DEBOUNCED Ghostty 868"
+    },
+    {
+      "t": 16.519,
+      "line": "EVENT_HANDLER_WINDOW_RESIZED:DEBOUNCED Ghostty 868"
+    },
+    {
+      "t": 17.568,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Safari (2219)"
+    },
+    {
+      "t": 18.368,
+      "line": "EVENT_HANDLER_WINDOW_RESIZED: Emacs 832"
+    },
+    {
+      "t": 18.368,
+      "line": "EVENT_HANDLER_WINDOW_RESIZED: Safari 1414"
+    },
+    {
+      "t": 18.368,
+      "line": "EVENT_HANDLER_WINDOW_MOVED:DEBOUNCED Safari 1414"
+    },
+    {
+      "t": 19.461,
+      "line": "EVENT_HANDLER_SPACE_CHANGED: 1"
+    },
+    {
+      "t": 19.461,
+      "line": "EVENT_HANDLER_WINDOW_FOCUSED: Safari 103"
+    },
+    {
+      "t": 21.407,
+      "line": "EVENT_HANDLER_WINDOW_FOCUSED: Safari 1414"
+    },
+    {
+      "t": 21.407,
+      "line": "EVENT_HANDLER_SPACE_CHANGED: 3"
+    },
+    {
+      "t": 22.47,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Emacs (78383)"
+    },
+    {
+      "t": 23.113,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Ghostty (2588)"
+    },
+    {
+      "t": 24.87,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Safari (2219)"
+    },
+    {
+      "t": 24.87,
+      "line": "EVENT_HANDLER_SPACE_CHANGED: 1"
+    },
+    {
+      "t": 24.87,
+      "line": "EVENT_HANDLER_WINDOW_FOCUSED: Safari 103"
+    },
+    {
+      "t": 36.163,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Ghostty (2588)"
+    },
+    {
+      "t": 36.163,
+      "line": "EVENT_HANDLER_SPACE_CHANGED: 3"
+    },
+    {
+      "t": 38.514,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Emacs (78383)"
+    },
+    {
+      "t": 39.376,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Safari (2219)"
+    },
+    {
+      "t": 39.655,
+      "line": "EVENT_HANDLER_WINDOW_FOCUSED: Safari 1414"
+    },
+    {
+      "t": 39.867,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Ghostty (2588)"
+    },
+    {
+      "t": 44.994,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Safari (2219)"
+    },
+    {
+      "t": 44.994,
+      "line": "EVENT_HANDLER_SPACE_CHANGED: 1"
+    },
+    {
+      "t": 45.332,
+      "line": "EVENT_HANDLER_WINDOW_FOCUSED: Safari 103"
+    },
+    {
+      "t": 48.762,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Ghostty (2588)"
+    },
+    {
+      "t": 48.762,
+      "line": "EVENT_HANDLER_SPACE_CHANGED: 3"
+    },
+    {
+      "t": 50.244,
+      "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Safari (2219)"
+    },
+    {
+      "t": 50.48,
+      "line": "EVENT_HANDLER_WINDOW_FOCUSED: Safari 1414"
+    },
+    {
+      "t": 56.287,
+      "line": "EVENT_HANDLER_SPACE_CHANGED: 1"
+    },
+    {
+      "t": 56.581,
+      "line": "EVENT_HANDLER_WINDOW_FOCUSED: Safari 103"
+    }
+  ]
+}

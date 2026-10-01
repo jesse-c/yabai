@@ -1,0 +1,156 @@
+{
+  "daemon_pid": "79986",
+  "debug_output": "off",
+  "installed_sha256": "706b9617aa22047b525e75c3286284c7ddfe04b3f5449301505a5e902c9895c9",
+  "space": {
+    "id": 1,
+    "index": 1,
+    "type": "bsp"
+  },
+  "before": {
+    "103": {
+      "id": 103,
+      "frame": {
+        "x": 12.0,
+        "y": 52.0,
+        "w": 885.0,
+        "h": 1105.0
+      },
+      "split-type": "vertical",
+      "split-child": "first_child",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    },
+    "514": {
+      "id": 514,
+      "frame": {
+        "x": 903.0,
+        "y": 52.0,
+        "w": 885.0,
+        "h": 1105.0
+      },
+      "split-type": "vertical",
+      "split-child": "second_child",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    },
+    "119": {
+      "id": 119,
+      "frame": {
+        "x": 229.0,
+        "y": 166.0,
+        "w": 1341.0,
+        "h": 837.0
+      },
+      "split-type": "none",
+      "split-child": "none",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    },
+    "128": {
+      "id": 128,
+      "frame": {
+        "x": 530.0,
+        "y": 181.0,
+        "w": 740.0,
+        "h": 807.0
+      },
+      "split-type": "none",
+      "split-child": "none",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    },
+    "547": {
+      "id": 547,
+      "frame": {
+        "x": 910.0,
+        "y": 366.0,
+        "w": 660.0,
+        "h": 320.0
+      },
+      "split-type": "none",
+      "split-child": "none",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    }
+  },
+  "after": {
+    "103": {
+      "id": 103,
+      "frame": {
+        "x": 12.0,
+        "y": 52.0,
+        "w": 885.0,
+        "h": 1105.0
+      },
+      "split-type": "vertical",
+      "split-child": "first_child",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    },
+    "514": {
+      "id": 514,
+      "frame": {
+        "x": 903.0,
+        "y": 52.0,
+        "w": 885.0,
+        "h": 1105.0
+      },
+      "split-type": "vertical",
+      "split-child": "second_child",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    },
+    "119": {
+      "id": 119,
+      "frame": {
+        "x": 229.0,
+        "y": 166.0,
+        "w": 1341.0,
+        "h": 837.0
+      },
+      "split-type": "none",
+      "split-child": "none",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    },
+    "128": {
+      "id": 128,
+      "frame": {
+        "x": 530.0,
+        "y": 181.0,
+        "w": 740.0,
+        "h": 807.0
+      },
+      "split-type": "none",
+      "split-child": "none",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    },
+    "547": {
+      "id": 547,
+      "frame": {
+        "x": 910.0,
+        "y": 366.0,
+        "w": 660.0,
+        "h": 320.0
+      },
+      "split-type": "none",
+      "split-child": "none",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    }
+  },
+  "repeated_layout_preserved": true,
+  "tracked_nonfloating_windows_checked": 5
+}

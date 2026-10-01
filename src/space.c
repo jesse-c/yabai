@@ -14,9 +14,11 @@ inline uint32_t space_display_id(uint64_t sid)
     return id;
 }
 
-uint32_t *space_window_list_for_connection(uint64_t *space_list, int space_count, int cid, int *count, bool include_minimized)
+static uint32_t *space_window_list_for_connection_query(uint64_t *space_list, int space_count, int cid, int *count, bool include_minimized, bool *success)
 {
     uint32_t *window_list = NULL;
+    *count = 0;
+    *success = false;
     uint64_t set_tags = 0;
     uint64_t clear_tags = 0;
     uint32_t options = include_minimized ? 0x7 : 0x2;
@@ -25,14 +27,16 @@ uint32_t *space_window_list_for_connection(uint64_t *space_list, int space_count
     CFArrayRef window_list_ref = SLSCopyWindowsWithOptionsAndTags(g_connection, cid, space_list_ref, options, &set_tags, &clear_tags);
     if (!window_list_ref) goto err;
 
-    *count = CFArrayGetCount(window_list_ref);
-    if (!*count) goto out;
+    int capacity = CFArrayGetCount(window_list_ref);
+    if (!capacity) { *success = true; goto out; }
 
-    CFTypeRef query = SLSWindowQueryWindows(g_connection, window_list_ref, *count);
+    CFTypeRef query = SLSWindowQueryWindows(g_connection, window_list_ref, capacity);
+    if (!query) goto out;
     CFTypeRef iterator = SLSWindowQueryResultCopyWindows(query);
+    if (!iterator) { CFRelease(query); goto out; }
 
     int window_count = 0;
-    window_list = ts_alloc_list(uint32_t, *count);
+    window_list = ts_alloc_list(uint32_t, capacity);
 
     while (SLSWindowIteratorAdvance(iterator)) {
         uint64_t tags = SLSWindowIteratorGetTags(iterator);
@@ -68,8 +72,9 @@ uint32_t *space_window_list_for_connection(uint64_t *space_list, int space_count
         }
     }
 
-    window_list = ts_resize(window_list, sizeof(uint32_t) * *count, sizeof(uint32_t) * window_count);
+    window_list = ts_resize(window_list, sizeof(uint32_t) * capacity, sizeof(uint32_t) * window_count);
     *count = window_count;
+    *success = true;
 
     CFRelease(query);
     CFRelease(iterator);
@@ -78,6 +83,19 @@ out:
 err:
     CFRelease(space_list_ref);
     return window_list;
+}
+
+uint32_t *space_window_list_for_connection(uint64_t *space_list, int space_count, int cid, int *count, bool include_minimized)
+{
+    bool success;
+    return space_window_list_for_connection_query(space_list, space_count, cid, count, include_minimized, &success);
+}
+
+bool space_window_list_checked(uint64_t sid, int *count, bool include_minimized, uint32_t **window_list)
+{
+    bool success;
+    *window_list = space_window_list_for_connection_query(&sid, 1, 0, count, include_minimized, &success);
+    return success;
 }
 
 inline uint32_t *space_window_list(uint64_t sid, int *count, bool include_minimized)
