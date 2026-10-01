@@ -1,0 +1,96 @@
+{
+  "shell": "/opt/homebrew/bin/fish",
+  "cwd": "/",
+  "profiles": [
+    {
+      "elapsed_ms": 355.493875,
+      "selected_entries": [
+        {
+          "own_us": 89088,
+          "inclusive_us": 244387,
+          "command": "---> /opt/homebrew/opt/mise/bin/mise activate fish | source"
+        },
+        {
+          "own_us": 154776,
+          "inclusive_us": 155037,
+          "command": "-----> /opt/homebrew/opt/mise/bin/mise hook-env --shell-pid $fish_pid -s fish $argv | source"
+        },
+        {
+          "own_us": 389,
+          "inclusive_us": 68206,
+          "command": "> builtin source /Users/jesse/.config/fish/config.fish"
+        },
+        {
+          "own_us": 274,
+          "inclusive_us": 66968,
+          "command": "-> mise activate fish | source"
+        },
+        {
+          "own_us": 47407,
+          "inclusive_us": 47599,
+          "command": "---> /opt/homebrew/opt/mise/bin/mise hook-env --shell-pid $fish_pid -s fish $argv | source"
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 155.867125,
+      "selected_entries": [
+        {
+          "own_us": 14375,
+          "inclusive_us": 62913,
+          "command": "---> /opt/homebrew/opt/mise/bin/mise activate fish | source"
+        },
+        {
+          "own_us": 48042,
+          "inclusive_us": 48294,
+          "command": "-----> /opt/homebrew/opt/mise/bin/mise hook-env --shell-pid $fish_pid -s fish $argv | source"
+        },
+        {
+          "own_us": 160,
+          "inclusive_us": 67765,
+          "command": "> builtin source /Users/jesse/.config/fish/config.fish"
+        },
+        {
+          "own_us": 327,
+          "inclusive_us": 67057,
+          "command": "-> mise activate fish | source"
+        },
+        {
+          "own_us": 48398,
+          "inclusive_us": 48588,
+          "command": "---> /opt/homebrew/opt/mise/bin/mise hook-env --shell-pid $fish_pid -s fish $argv | source"
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 153.509291,
+      "selected_entries": [
+        {
+          "own_us": 14662,
+          "inclusive_us": 63132,
+          "command": "---> /opt/homebrew/opt/mise/bin/mise activate fish | source"
+        },
+        {
+          "own_us": 47999,
+          "inclusive_us": 48236,
+          "command": "-----> /opt/homebrew/opt/mise/bin/mise hook-env --shell-pid $fish_pid -s fish $argv | source"
+        },
+        {
+          "own_us": 158,
+          "inclusive_us": 65340,
+          "command": "> builtin source /Users/jesse/.config/fish/config.fish"
+        },
+        {
+          "own_us": 272,
+          "inclusive_us": 64672,
+          "command": "-> mise activate fish | source"
+        },
+        {
+          "own_us": 47076,
+          "inclusive_us": 47250,
+          "command": "---> /opt/homebrew/opt/mise/bin/mise hook-env --shell-pid $fish_pid -s fish $argv | source"
+        }
+      ]
+    }
+  ]
+}
