@@ -159,6 +159,11 @@ static inline uint64_t read_os_freq(void)
     return 1000000000;
 }
 
+static inline double elapsed_time_ms(uint64_t begin, uint64_t end)
+{
+    return (double)(end - begin) / ((double)read_os_freq() / 1000.0);
+}
+
 struct rgba_color
 {
     uint32_t p;
