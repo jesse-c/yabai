@@ -13,13 +13,15 @@ typedef TEST_SIG(function);
 
 #include "area.c"
 #include "timing.c"
+#include "window-selectors.c"
 
 #define TEST_ENTRY(name) { #name, test_##name },
 #define TEST_LIST                                              \
     TEST_ENTRY(display_area_is_in_direction)                   \
     TEST_ENTRY(closest_display_in_direction)                    \
     TEST_ENTRY(elapsed_time_preserves_small_intervals)          \
-    TEST_ENTRY(resize_throttle_threshold_is_independent_of_uptime)
+    TEST_ENTRY(resize_throttle_threshold_is_independent_of_uptime) \
+    TEST_ENTRY(explicit_window_commands_do_not_require_current_focus)
 
 static struct {
     char *name;
