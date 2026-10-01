@@ -1,0 +1,70 @@
+{
+  "installed_sha256": "77649dde102a46f029acac5459f01f8cf76cba4f441242cf91f0ffcd36002238",
+  "space": {
+    "id": 3,
+    "index": 2,
+    "type": "bsp"
+  },
+  "managed_windows_checked": 2,
+  "before": {
+    "832": {
+      "id": 832,
+      "frame": {
+        "x": 12.0,
+        "y": 52.0,
+        "w": 881.0,
+        "h": 1104.0
+      },
+      "split-type": "vertical",
+      "split-child": "first_child",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    },
+    "868": {
+      "id": 868,
+      "frame": {
+        "x": 903.0,
+        "y": 52.0,
+        "w": 885.0,
+        "h": 1105.0
+      },
+      "split-type": "vertical",
+      "split-child": "second_child",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    }
+  },
+  "after": {
+    "832": {
+      "id": 832,
+      "frame": {
+        "x": 12.0,
+        "y": 52.0,
+        "w": 881.0,
+        "h": 1104.0
+      },
+      "split-type": "vertical",
+      "split-child": "first_child",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    },
+    "868": {
+      "id": 868,
+      "frame": {
+        "x": 903.0,
+        "y": 52.0,
+        "w": 885.0,
+        "h": 1105.0
+      },
+      "split-type": "vertical",
+      "split-child": "second_child",
+      "stack-index": 0,
+      "has-ax-reference": true,
+      "is-floating": false
+    }
+  },
+  "repeated_layout_preserved": true
+}

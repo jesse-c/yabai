@@ -202,8 +202,11 @@ void space_manager_set_label_for_space(struct space_manager *sm, uint64_t sid, c
 void space_manager_set_layout_for_space(struct space_manager *sm, uint64_t sid, enum view_type layout)
 {
     struct view *view = space_manager_find_view(sm, sid);
-    view->layout = layout;
-    view_clear(view);
+    // Repeated layout signals should reconcile windows without losing their tree positions.
+    if (view->layout != layout) {
+        view->layout = layout;
+        view_clear(view);
+    }
 
     if (view->layout != VIEW_FLOAT) {
         window_manager_validate_and_check_for_windows_on_space(sm, &g_window_manager, sid);
