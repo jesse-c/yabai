@@ -215,7 +215,7 @@ def harness(out):
 extern int SLSMainConnectionID(void);
 extern CGError SLSGetWindowOwner(int, uint32_t, int *);
 struct application { int connection; };
-struct window { uint32_t id; uint32_t *id_ptr; struct application *application; };
+struct window { uint32_t id; uint32_t *id_ptr; struct application *application; bool owner_query_retry_pending; };
 struct { struct table window,managed; } g_window_manager;
 int g_connection, destroyed;
 static unsigned long hash(void *p){return *(uint32_t *)p;}
@@ -223,7 +223,7 @@ static int cmp(void *a,void *b){return *(uint32_t *)a==*(uint32_t *)b;}
 static void *window_manager_find_managed_window(void *m,struct window *w){return table_find(&g_window_manager.managed,&w->id);}
 static struct window *window_manager_find_window(void *m,uint32_t id){return table_find(&g_window_manager.window,&id);}
 static void schedule_window_validation(bool retry){}
-static void EVENT_HANDLER_WINDOW_DESTROYED(void *p,int a){++destroyed;}
+static void window_handle_destroyed(struct window *p){++destroyed;}
 ''' + claim + '\n' + validator + r'''
 int main(int argc,char **argv) {
   g_connection=SLSMainConnectionID();
@@ -299,11 +299,13 @@ int main(void){setbuf(stdout,NULL);struct event_signal es={0};struct signal sig=
 '''
     result['signal_flush_stubbed_filter'] = native(out, 'signals', signals)
     post = function('src/event_loop.c', 'void event_loop_post(struct event_loop *event_loop, enum event_type type, void *context, int param1)')
+    queue_init = function('src/event_loop.c', 'static bool event_loop_init(struct event_loop *event_loop)')
+    queue_take = function('src/event_loop.c', 'static struct event *event_loop_take(struct event_loop *event_loop, bool wait)')
     queue = r'''
-#include "misc/memory_pool.h"
+#include "misc/log.h"
 #include "event_loop.h"
-''' + post + r'''
-int main(void){struct event_loop q={0};assert(memory_pool_init(&q.pool,512*1024));char name[80];snprintf(name,sizeof(name),"/perf-%d",getpid());q.semaphore=sem_open(name,O_CREAT,0600,0);assert(q.semaphore!=SEM_FAILED);sem_unlink(name);q.head=memory_pool_push(&q.pool,sizeof(struct event));q.head->next=NULL;q.tail=q.head;CGEventRef event=CGEventCreate(NULL);assert(event);int n=100000;printf("[");for(int retain=0;retain<2;retain++){double t=now();for(int i=0;i<n;i++){event_loop_post(&q,MOUSE_DRAGGED,retain?(void *)CFRetain(event):NULL,0);q.head=q.head->next;if(retain)CFRelease(q.head->context);assert(!sem_trywait(q.semaphore));}printf("%s{\"retain_release\":%s,\"events\":%d,\"elapsed_ms\":%.6f}",retain?",":"",retain?"true":"false",n,now()-t);}printf("]\n");CFRelease(event);sem_close(q.semaphore);}
+''' + queue_init + '\n' + queue_take + '\n' + post + r'''
+int main(void){struct event_loop q={0};assert(event_loop_init(&q));CGEventRef event=CGEventCreate(NULL);assert(event);int n=100000;printf("[");for(int retain=0;retain<2;retain++){double t=now();for(int i=0;i<n;i++){event_loop_post(&q,MOUSE_DRAGGED,retain?(void *)CFRetain(event):NULL,0);struct event *node=event_loop_take(&q,false);assert(node&&!node->next);if(retain)CFRelease(node->context);free(node);}printf("%s{\"retain_release\":%s,\"events\":%d,\"elapsed_ms\":%.6f}",retain?",":"",retain?"true":"false",n,now()-t);}printf("]\n");CFRelease(event);pthread_cond_destroy(&q.ready);pthread_mutex_destroy(&q.lock);}
 '''
     result['queue_drained_single_producer'] = native(out, 'queue', queue)
     return dict(metadata=metadata(), results=result)
@@ -335,9 +337,11 @@ int main(void){uint64_t current=read_os_timer();uint64_t bases[]={current,3600UL
     timer_result = native(out, 'timer-precision', timer.replace('>=67.67f', '>=' + threshold))
     post = function('src/event_loop.c', 'void event_loop_post(struct event_loop *event_loop, enum event_type type, void *context, int param1)')
     worker = function('src/event_loop.c', 'static void *event_loop_run(void *context)')
+    queue_init = function('src/event_loop.c', 'static bool event_loop_init(struct event_loop *event_loop)')
+    queue_take = function('src/event_loop.c', 'static struct event *event_loop_take(struct event_loop *event_loop, bool wait)')
     wakeups = r'''
 #include <errno.h>
-#include "misc/memory_pool.h"
+#include "misc/log.h"
 #include "event_loop.h"
 struct event_loop *current_q;int waits,handled;
 #define profile_begin() ((void)0)
@@ -347,12 +351,13 @@ static void event_signal_flush(void){}
 #define EVENT_TYPE_ENTRY(value) void EVENT_HANDLER_##value(void *c,int p){handled++;}
 EVENT_TYPE_LIST
 #undef EVENT_TYPE_ENTRY
-static int audit_wait(sem_t *s){waits++;int r=sem_trywait(s);if(r){assert(errno==EAGAIN);current_q->is_running=false;}return r;}
-#define sem_wait audit_wait
-''' + post + '\n' + worker + r'''
-int main(void){int ns[]={10,1000,10000};printf("[");for(int x=0;x<3;x++)for(int one=0;one<2;one++){
- printf("%s{\"events\":%d,\"coalesced_tokens_control\":%s,\"samples_ms\":[",x||one?",":"",ns[x],one?"true":"false");
- for(int r=0;r<30;r++){struct event_loop q={0};assert(memory_pool_init(&q.pool,512*1024));char name[80];snprintf(name,sizeof(name),"/wake-%d",getpid());q.semaphore=sem_open(name,O_CREAT,0600,0);assert(q.semaphore!=SEM_FAILED);sem_unlink(name);q.head=memory_pool_push(&q.pool,sizeof(struct event));q.head->next=NULL;q.tail=q.head;for(int i=0;i<ns[x];i++)event_loop_post(&q,WINDOW_FOCUSED,NULL,0);if(one)for(int i=1;i<ns[x];i++)assert(!sem_trywait(q.semaphore));current_q=&q;q.is_running=true;waits=handled=0;double t=now();event_loop_run(&q);double elapsed=now()-t;assert(handled==ns[x]);assert(waits==(one?2:ns[x]+1));printf("%s%.6f",r?",":"",elapsed);munmap(q.pool.memory,q.pool.size+getpagesize());sem_close(q.semaphore);}
+static int audit_wait(pthread_cond_t *c,pthread_mutex_t *m){waits++;current_q->is_running=false;return 0;}
+// Replace the terminal blocking wait only, allowing the harness to finish.
+#define pthread_cond_wait audit_wait
+''' + queue_init + '\n' + queue_take + '\n' + post + '\n' + worker + r'''
+int main(void){int ns[]={10,1000,10000};printf("[");for(int x=0;x<3;x++){
+ printf("%s{\"events\":%d,\"owned_condition_queue\":true,\"samples_ms\":[",x?",":"",ns[x]);
+ for(int r=0;r<30;r++){struct event_loop q={0};assert(event_loop_init(&q));for(int i=0;i<ns[x];i++)event_loop_post(&q,WINDOW_FOCUSED,NULL,0);current_q=&q;waits=handled=0;double t=now();event_loop_run(&q);double elapsed=now()-t;assert(handled==ns[x]);assert(waits==1);printf("%s%.6f",r?",":"",elapsed);pthread_cond_destroy(&q.ready);pthread_mutex_destroy(&q.lock);}
  printf("],\"wait_calls\":%d}",waits);
  }printf("]\n");}
 '''

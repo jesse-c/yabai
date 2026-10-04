@@ -1,0 +1,18 @@
+ -- Running 11 tests
+
+(0.0527ms) success display_area_is_in_direction
+(0.0024ms) success closest_display_in_direction
+(0.0000ms) success elapsed_time_preserves_small_intervals
+(0.0000ms) success resize_throttle_threshold_is_independent_of_uptime
+(0.0487ms) success explicit_window_commands_do_not_require_current_focus
+(0.0254ms) success stale_window_notifications_do_not_access_freed_or_reused_windows
+(16.0936ms) success event_queue_preserves_backlog_and_detached_batches
+(70.5671ms) success event_queue_preserves_concurrent_producers_and_wakeups
+(0.1137ms) success daemon_request_reader_assembles_fragmented_frames
+(0.0658ms) success daemon_request_reader_rejects_invalid_sizes_and_termination
+(2115.7545ms) success daemon_socket_worker_isolates_slow_clients_and_bounds_admission
+
+ -- Completed (2202.7969ms)
+	11 succeeded
+	0 failed
+	11 total

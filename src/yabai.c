@@ -66,11 +66,16 @@ static int client_send_message(int argc, char **argv)
     int argl[argc];
 
     for (int i = 1; i < argc; ++i) {
-        argl[i] = strlen(argv[i]);
+        size_t length = strlen(argv[i]);
+        if (message_length > DAEMON_MESSAGE_MAX_LENGTH || length > (size_t)(DAEMON_MESSAGE_MAX_LENGTH - message_length)) {
+            error("yabai-msg: message exceeds %d bytes\n", DAEMON_MESSAGE_MAX_LENGTH);
+        }
+        argl[i] = (int)length;
         message_length += argl[i];
     }
 
     char *message = malloc(sizeof(int)+message_length);
+    if (!message) error("yabai-msg: could not allocate message\n");
     char *temp = sizeof(int)+message;
 
     memcpy(message, &message_length, sizeof(int));
@@ -93,8 +98,15 @@ static int client_send_message(int argc, char **argv)
         error("yabai-msg: failed to connect to socket..\n");
     }
 
-    if (send(sockfd, message, sizeof(int)+message_length, 0) == -1) {
-        error("yabai-msg: failed to send data..\n");
+    int enabled = 1;
+    setsockopt(sockfd, SOL_SOCKET, SO_NOSIGPIPE, &enabled, sizeof(enabled));
+    size_t bytes_sent = 0;
+    size_t bytes_to_send = sizeof(int) + (size_t)message_length;
+    while (bytes_sent < bytes_to_send) {
+        ssize_t n = send(sockfd, message + bytes_sent, bytes_to_send - bytes_sent, 0);
+        if (n == -1 && errno == EINTR) continue;
+        if (n <= 0) error("yabai-msg: failed to send data..\n");
+        bytes_sent += (size_t)n;
     }
 
     shutdown(sockfd, SHUT_WR);

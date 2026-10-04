@@ -16,6 +16,7 @@ typedef TEST_SIG(function);
 #include "window-selectors.c"
 #include "window-notifications.c"
 #include "event-queue.c"
+#include "daemon-requests.c"
 
 #define TEST_ENTRY(name) { #name, test_##name },
 #define TEST_LIST                                              \
@@ -26,7 +27,10 @@ typedef TEST_SIG(function);
     TEST_ENTRY(explicit_window_commands_do_not_require_current_focus) \
     TEST_ENTRY(stale_window_notifications_do_not_access_freed_or_reused_windows) \
     TEST_ENTRY(event_queue_preserves_backlog_and_detached_batches) \
-    TEST_ENTRY(event_queue_preserves_concurrent_producers_and_wakeups)
+    TEST_ENTRY(event_queue_preserves_concurrent_producers_and_wakeups) \
+    TEST_ENTRY(daemon_request_reader_assembles_fragmented_frames) \
+    TEST_ENTRY(daemon_request_reader_rejects_invalid_sizes_and_termination) \
+    TEST_ENTRY(daemon_socket_worker_isolates_slow_clients_and_bounds_admission)
 
 static struct {
     char *name;

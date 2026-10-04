@@ -2,6 +2,7 @@ static struct {
     int sockfd;
     bool is_running;
     pthread_t thread;
+    int wakeup[2];
 } g_message_loop;
 
 extern struct event_loop g_event_loop;
@@ -3018,24 +3019,202 @@ void handle_message(FILE *rsp, char *message)
     }
 }
 
+static void message_loop_wake(void)
+{
+    char byte = 0;
+    while (write(g_message_loop.wakeup[1], &byte, 1) == -1 && errno == EINTR) {}
+    // EAGAIN means an existing unread wakeup already makes poll return.
+}
+
+void message_handle_request(struct daemon_request *request)
+{
+    FILE *rsp = open_memstream(&request->response, &request->response_length);
+    bool success = false;
+    if (rsp) {
+        debug_message("EVENT_HANDLER_DAEMON_MESSAGE", request->message);
+        handle_message(rsp, request->message);
+        success = fclose(rsp) == 0;
+    }
+    if (!success) {
+        free(request->response);
+        request->response = strdup(FAILURE_MESSAGE "could not allocate response\n");
+        request->response_length = request->response ? strlen(request->response) : 0;
+    }
+    __atomic_store_n(&request->state, DAEMON_REQUEST_RESPONSE_READY, __ATOMIC_RELEASE);
+    message_loop_wake();
+}
+
+static void message_request_destroy(struct daemon_request *request)
+{
+    socket_close(request->sockfd);
+    free(request->message);
+    free(request->response);
+    free(request);
+}
+
+static void message_request_reject(int sockfd, const char *reason)
+{
+    // Best-effort error reporting must not wait for a client to read it.
+    send(sockfd, reason, strlen(reason), MSG_DONTWAIT);
+}
+
+enum message_read_result { MESSAGE_READ_WAIT, MESSAGE_READ_READY, MESSAGE_READ_INVALID };
+
+static enum message_read_result message_request_read(struct daemon_request *request)
+{
+    for (;;) {
+        if (elapsed_time_ms(request->phase_begin, read_os_timer()) >= DAEMON_MESSAGE_TIMEOUT_MS) return MESSAGE_READ_INVALID;
+        bool header = request->header_received < sizeof(request->header);
+        void *buffer = header ? (void *)(request->header + request->header_received)
+                              : (void *)(request->message + request->received);
+        size_t length = header ? sizeof(request->header) - request->header_received
+                               : (size_t)request->length - request->received;
+        ssize_t n = recv(request->sockfd, buffer, length, MSG_DONTWAIT);
+        if (n == -1 && errno == EINTR) continue;
+        if (n == -1 && (errno == EAGAIN || errno == EWOULDBLOCK)) return MESSAGE_READ_WAIT;
+        if (n <= 0) return MESSAGE_READ_INVALID;
+
+        if (header) {
+            request->header_received += (size_t)n;
+            if (request->header_received == sizeof(request->header)) {
+                memcpy(&request->length, request->header, sizeof(request->length));
+                if (request->length < 2 || request->length > DAEMON_MESSAGE_MAX_LENGTH) return MESSAGE_READ_INVALID;
+                request->message = malloc((size_t)request->length);
+                if (!request->message) return MESSAGE_READ_INVALID;
+            }
+        } else {
+            request->received += (size_t)n;
+            if (request->received == (size_t)request->length) {
+                // get_token may examine the byte following each NUL. Keep the
+                // existing wire protocol, but require its terminal double NUL.
+                if (request->message[request->length-1] || request->message[request->length-2]) return MESSAGE_READ_INVALID;
+                return MESSAGE_READ_READY;
+            }
+        }
+    }
+}
+
+static bool message_socket_prepare(int sockfd)
+{
+    int flags = fcntl(sockfd, F_GETFD);
+    if (flags == -1 || fcntl(sockfd, F_SETFD, flags | FD_CLOEXEC) == -1) return false;
+    int enabled = 1;
+    return setsockopt(sockfd, SOL_SOCKET, SO_NOSIGPIPE, &enabled, sizeof(enabled)) == 0;
+}
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-parameter"
 static void *message_loop_run(void *context)
 {
-    while (g_message_loop.is_running) {
-        int sockfd = accept(g_message_loop.sockfd, NULL, 0);
-        if (sockfd == -1) continue;
+    struct daemon_request *requests[DAEMON_MESSAGE_MAX_CLIENTS] = {0};
+    for (;;) {
+        bool running = __atomic_load_n(&g_message_loop.is_running, __ATOMIC_ACQUIRE);
+        bool queued = false;
+        struct pollfd fds[DAEMON_MESSAGE_MAX_CLIENTS + 2] = {0};
+        fds[0] = (struct pollfd) { .fd = running ? g_message_loop.sockfd : -1, .events = POLLIN };
+        fds[1] = (struct pollfd) { .fd = g_message_loop.wakeup[0], .events = POLLIN };
+        int timeout = DAEMON_MESSAGE_TIMEOUT_MS;
 
-        event_loop_post(&g_event_loop, DAEMON_MESSAGE, NULL, sockfd);
+        for (int i = 0; i < DAEMON_MESSAGE_MAX_CLIENTS; ++i) {
+            struct daemon_request *request = requests[i];
+            fds[i+2].fd = -1;
+            if (!request) continue;
+            enum daemon_request_state state = __atomic_load_n(&request->state, __ATOMIC_ACQUIRE);
+            if (!running && state != DAEMON_REQUEST_QUEUED) {
+                message_request_destroy(request);
+                requests[i] = NULL;
+                continue;
+            }
+            if (state == DAEMON_REQUEST_RESPONSE_READY) {
+                request->phase_begin = read_os_timer();
+                state = DAEMON_REQUEST_WRITING;
+                __atomic_store_n(&request->state, state, __ATOMIC_RELAXED);
+            }
+            if (state == DAEMON_REQUEST_QUEUED) { queued = true; continue; }
+            double remaining = DAEMON_MESSAGE_TIMEOUT_MS - elapsed_time_ms(request->phase_begin, read_os_timer());
+            if (remaining <= 0) {
+                if (state == DAEMON_REQUEST_READING) message_request_reject(request->sockfd, FAILURE_MESSAGE "request timed out\n");
+                message_request_destroy(request);
+                requests[i] = NULL;
+                continue;
+            }
+            int wait = (int)remaining + 1;
+            if (wait < timeout) timeout = wait;
+            fds[i+2].fd = request->sockfd;
+            fds[i+2].events = state == DAEMON_REQUEST_READING ? POLLIN : POLLOUT;
+        }
+        // Queued contexts belong to the event thread until it publishes the
+        // response. Even shutdown must not reclaim an in-flight request.
+        if (!running && !queued) break;
+
+        int ready = poll(fds, DAEMON_MESSAGE_MAX_CLIENTS + 2, timeout);
+        if (ready == -1) {
+            if (errno == EINTR) continue;
+            error("yabai: message socket poll failed: %s\n", strerror(errno));
+        }
+        if (fds[1].revents & POLLIN) {
+            char bytes[64];
+            while (read(g_message_loop.wakeup[0], bytes, sizeof(bytes)) > 0) {}
+        }
+
+        for (int i = 0; i < DAEMON_MESSAGE_MAX_CLIENTS; ++i) {
+            struct daemon_request *request = requests[i];
+            if (!request || !fds[i+2].revents) continue;
+            enum daemon_request_state state = __atomic_load_n(&request->state, __ATOMIC_ACQUIRE);
+            if (state == DAEMON_REQUEST_READING) {
+                enum message_read_result result = message_request_read(request);
+                if (result == MESSAGE_READ_WAIT) continue;
+                if (result == MESSAGE_READ_READY) {
+                    __atomic_store_n(&request->state, DAEMON_REQUEST_QUEUED, __ATOMIC_RELEASE);
+                    event_loop_post(&g_event_loop, DAEMON_MESSAGE, request, 0);
+                    continue;
+                }
+                message_request_reject(request->sockfd, FAILURE_MESSAGE "malformed or oversized request\n");
+            } else if (state == DAEMON_REQUEST_WRITING) {
+                size_t remaining = request->response_length - request->response_sent;
+                if (remaining) {
+                    size_t chunk = remaining < 65536 ? remaining : 65536;
+                    ssize_t n = send(request->sockfd, request->response + request->response_sent, chunk, MSG_DONTWAIT);
+                    if (n == -1 && (errno == EINTR || errno == EAGAIN || errno == EWOULDBLOCK)) continue;
+                    if (n > 0) {
+                        request->response_sent += (size_t)n;
+                        if (request->response_sent < request->response_length) continue;
+                    }
+                }
+            } else {
+                continue;
+            }
+            message_request_destroy(request);
+            requests[i] = NULL;
+        }
+
+        if (fds[0].revents & POLLIN) {
+            // Limit accepts per turn so existing readers/writers keep progressing.
+            for (int n = 0; n < DAEMON_MESSAGE_MAX_CLIENTS; ++n) {
+                int sockfd = accept(g_message_loop.sockfd, NULL, 0);
+                if (sockfd == -1) break;
+                if (!message_socket_prepare(sockfd)) { socket_close(sockfd); continue; }
+                int slot = 0;
+                while (slot < DAEMON_MESSAGE_MAX_CLIENTS && requests[slot]) ++slot;
+                struct daemon_request *request = slot < DAEMON_MESSAGE_MAX_CLIENTS ? calloc(1, sizeof(*request)) : NULL;
+                if (!request) {
+                    message_request_reject(sockfd, FAILURE_MESSAGE "too many pending requests\n");
+                    socket_close(sockfd);
+                    continue;
+                }
+                request->sockfd = sockfd;
+                request->phase_begin = read_os_timer();
+                requests[slot] = request;
+            }
+        }
     }
-
     return NULL;
 }
 #pragma clang diagnostic pop
 
 bool message_loop_begin(char *socket_path)
 {
-    struct sockaddr_un socket_address;
+    struct sockaddr_un socket_address = {0};
     socket_address.sun_family = AF_UNIX;
     snprintf(socket_address.sun_path, sizeof(socket_address.sun_path), "%s", socket_path);
     unlink(socket_path);
@@ -3044,22 +3223,29 @@ bool message_loop_begin(char *socket_path)
         return false;
     }
 
-    if (bind(g_message_loop.sockfd, (struct sockaddr *) &socket_address, sizeof(socket_address)) == -1) {
+    bool bound = bind(g_message_loop.sockfd, (struct sockaddr *) &socket_address, sizeof(socket_address)) == 0;
+    bool initialized = bound && chmod(socket_path, 0600) == 0 && listen(g_message_loop.sockfd, SOMAXCONN) == 0 &&
+                       message_socket_prepare(g_message_loop.sockfd);
+    int flags = fcntl(g_message_loop.sockfd, F_GETFL);
+    initialized = initialized && flags != -1 && fcntl(g_message_loop.sockfd, F_SETFL, flags | O_NONBLOCK) == 0;
+    bool has_pipe = initialized && pipe(g_message_loop.wakeup) == 0;
+    initialized = has_pipe;
+    for (int i = 0; initialized && i < 2; ++i) {
+        int fd = g_message_loop.wakeup[i];
+        int descriptor_flags = fcntl(fd, F_GETFD);
+        int status_flags = fcntl(fd, F_GETFL);
+        initialized = descriptor_flags != -1 && status_flags != -1 &&
+                      fcntl(fd, F_SETFD, descriptor_flags | FD_CLOEXEC) == 0 &&
+                      fcntl(fd, F_SETFL, status_flags | O_NONBLOCK) == 0;
+    }
+    __atomic_store_n(&g_message_loop.is_running, initialized, __ATOMIC_RELEASE);
+    if (!initialized || pthread_create(&g_message_loop.thread, NULL, &message_loop_run, NULL) != 0) {
+        __atomic_store_n(&g_message_loop.is_running, false, __ATOMIC_RELEASE);
+        if (has_pipe) { close(g_message_loop.wakeup[0]); close(g_message_loop.wakeup[1]); }
+        socket_close(g_message_loop.sockfd);
+        if (bound) unlink(socket_path);
         return false;
     }
-
-    if (chmod(socket_path, 0600) != 0) {
-        return false;
-    }
-
-    if (listen(g_message_loop.sockfd, SOMAXCONN) == -1) {
-        return false;
-    }
-
-    fcntl(g_message_loop.sockfd, F_SETFD, FD_CLOEXEC | fcntl(g_message_loop.sockfd, F_GETFD));
-
-    g_message_loop.is_running = true;
-    pthread_create(&g_message_loop.thread, NULL, &message_loop_run, NULL);
 
     return true;
 }
