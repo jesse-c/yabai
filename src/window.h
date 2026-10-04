@@ -89,6 +89,7 @@ struct window
     struct application *application;
     AXUIElementRef ref;
     uint32_t id;
+    uint32_t generation;
     uint32_t *volatile id_ptr;
     CFStringRef role;
     CFStringRef subrole;
@@ -105,6 +106,13 @@ struct window
     int layer;
     char *scratchpad;
 };
+
+// AXObserver stores this value without owning it. Never give it a window
+// pointer: callbacks can arrive after unsubscription or destruction.
+static inline void *window_notification_context(struct window *window)
+{
+    return (void *)(uintptr_t)(((uint64_t)window->generation << 32) | window->id);
+}
 
 enum window_flag
 {

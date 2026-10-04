@@ -7,7 +7,7 @@ extern int g_connection;
 bool window_observe(struct window *window)
 {
     for (int i = 0; i < array_count(ax_window_notification); ++i) {
-        AXError result = AXObserverAddNotification(window->application->observer_ref, window->ref, ax_window_notification[i], window);
+        AXError result = AXObserverAddNotification(window->application->observer_ref, window->ref, ax_window_notification[i], window_notification_context(window));
         if (result == kAXErrorSuccess || result == kAXErrorNotificationAlreadyRegistered) {
             window->notification |= 1 << i;
         } else {
@@ -1102,12 +1102,16 @@ bool window_is_unknown(struct window *window)
 
 struct window *window_create(struct application *application, AXUIElementRef window_ref, uint32_t window_id)
 {
+    static uint32_t generation;
     struct window *window = malloc(sizeof(struct window));
+    if (!window) error("yabai: could not allocate window\n");
     memset(window, 0, sizeof(struct window));
 
     window->application = application;
     window->ref = window_ref;
     window->id = window_id;
+    window->generation = __atomic_add_fetch(&generation, 1, __ATOMIC_RELAXED);
+    if (!window->generation) error("yabai: window generations exhausted\n");
     window->id_ptr = &window->id;
     window->frame = window_ax_frame(window);
     window->role = window_ax_role(window);

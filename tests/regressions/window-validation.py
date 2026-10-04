@@ -52,8 +52,7 @@ static CGError SLSGetWindowOwner(int connection, uint32_t id, int *owner) {
     return failures[id] ? 1 : kCGErrorSuccess;
 }
 static void schedule_window_validation(bool retry) { assert(retry); ++retries; }
-static void EVENT_HANDLER_WINDOW_DESTROYED(void *context, int unused) {
-    struct window *w = context;
+static void window_handle_destroyed(struct window *w) {
     table_remove(&g_window_manager.window, &w->id);
     free(w);
     ++destroyed;

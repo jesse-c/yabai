@@ -632,9 +632,17 @@ static EVENT_HANDLER(WINDOW_CREATED)
     }
 }
 
-static EVENT_HANDLER(WINDOW_DESTROYED)
+static struct window *window_from_notification(void *context)
 {
-    struct window *window = context;
+    uint64_t identity = (uint64_t)(uintptr_t)context;
+    uint32_t id = (uint32_t)identity;
+    uint32_t generation = (uint32_t)(identity >> 32);
+    struct window *window = window_manager_find_window(&g_window_manager, id);
+    return window && window->generation == generation ? window : NULL;
+}
+
+static void window_handle_destroyed(struct window *window)
+{
     if (!window || window->id == 0) {
         debug("%s: window has already been destroyed, ignoring event..\n", __FUNCTION__);
         return;
@@ -663,6 +671,13 @@ static EVENT_HANDLER(WINDOW_DESTROYED)
     if (workspace_is_macos_sequoia_or_newer()) {
         schedule_window_notification_update();
     }
+}
+
+static EVENT_HANDLER(WINDOW_DESTROYED)
+{
+    struct window *window = window_from_notification(context);
+    if (!window || !window_claim_for_destruction(window)) return;
+    window_handle_destroyed(window);
 }
 
 static void validate_windows_after_focus(uint32_t focused_window_id, bool is_retry)
@@ -710,7 +725,7 @@ static void validate_windows_after_focus(uint32_t focused_window_id, bool is_ret
 
         if (!window_claim_for_destruction(window)) continue;
         debug("%s: removing vanished window %d after focus changed\n", __FUNCTION__, window->id);
-        EVENT_HANDLER_WINDOW_DESTROYED(window, 0);
+        window_handle_destroyed(window);
     }
 
     free(window_list);
@@ -928,7 +943,8 @@ static EVENT_HANDLER(WINDOW_RESIZED)
 
 static EVENT_HANDLER(WINDOW_MINIMIZED)
 {
-    struct window *window = context;
+    struct window *window = window_from_notification(context);
+    if (!window) return;
 
     if (!__sync_bool_compare_and_swap(&window->id_ptr, &window->id, &window->id)) {
         debug("%s: %d has been marked invalid by the system, ignoring event..\n", __FUNCTION__, window->id);
@@ -972,7 +988,8 @@ static EVENT_HANDLER(WINDOW_MINIMIZED)
 
 static EVENT_HANDLER(WINDOW_DEMINIMIZED)
 {
-    struct window *window = context;
+    struct window *window = window_from_notification(context);
+    if (!window) return;
 
     if (!__sync_bool_compare_and_swap(&window->id_ptr, &window->id, &window->id)) {
         debug("%s: %d has been marked invalid by the system, ignoring event..\n", __FUNCTION__, window->id);
@@ -1062,7 +1079,7 @@ static EVENT_HANDLER(SLS_WINDOW_DESTROYED)
         return;
     }
 
-    EVENT_HANDLER_WINDOW_DESTROYED(window, 0);
+    window_handle_destroyed(window);
 }
 
 static EVENT_HANDLER(SLS_SPACE_CREATED)

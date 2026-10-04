@@ -25,17 +25,9 @@ static OBSERVER_CALLBACK(application_notification_handler)
     } else if (CFEqual(notification, kAXWindowDeminiaturizedNotification)) {
         event_loop_post(&g_event_loop, WINDOW_DEMINIMIZED, context, 0);
     } else if (CFEqual(notification, kAXUIElementDestroyedNotification)) {
-        struct window *window = context;
-
-        //
-        // NOTE(asmvik): Flag events that are already queued, but not yet processed,
-        // so that they will be ignored; the memory we allocated is still valid and will
-        // be freed when this event is handled.
-        //
-
-        if (!window_claim_for_destruction(window)) return;
-
-        event_loop_post(&g_event_loop, WINDOW_DESTROYED, window, 0);
+        // Destruction and identity checks belong to the event thread. The
+        // observer context is an immutable ID/generation, not owned memory.
+        event_loop_post(&g_event_loop, WINDOW_DESTROYED, context, 0);
     }
 }
 #pragma clang diagnostic pop
