@@ -66,8 +66,8 @@ struct event_loop
 {
     bool is_running;
     pthread_t thread;
-    sem_t *semaphore;
-    struct memory_pool pool;
+    pthread_mutex_t lock;
+    pthread_cond_t ready;
     struct event *head;
     struct event *tail;
 };

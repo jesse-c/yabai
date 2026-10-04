@@ -15,6 +15,7 @@ typedef TEST_SIG(function);
 #include "timing.c"
 #include "window-selectors.c"
 #include "window-notifications.c"
+#include "event-queue.c"
 
 #define TEST_ENTRY(name) { #name, test_##name },
 #define TEST_LIST                                              \
@@ -23,7 +24,9 @@ typedef TEST_SIG(function);
     TEST_ENTRY(elapsed_time_preserves_small_intervals)          \
     TEST_ENTRY(resize_throttle_threshold_is_independent_of_uptime) \
     TEST_ENTRY(explicit_window_commands_do_not_require_current_focus) \
-    TEST_ENTRY(stale_window_notifications_do_not_access_freed_or_reused_windows)
+    TEST_ENTRY(stale_window_notifications_do_not_access_freed_or_reused_windows) \
+    TEST_ENTRY(event_queue_preserves_backlog_and_detached_batches) \
+    TEST_ENTRY(event_queue_preserves_concurrent_producers_and_wakeups)
 
 static struct {
     char *name;

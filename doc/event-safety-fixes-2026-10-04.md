@@ -34,3 +34,21 @@ have 64-bit pointers, which carry the combined ID and generation.
 The unit regression frees a window before dispatching its queued notifications,
 then inserts a replacement with the same ID and dispatches the stale notifications
 again. Missing and replaced windows must be ignored without altering the new one.
+
+## Event queue ownership and wakeups
+
+Event nodes now use individually owned storage. Producers append under a mutex;
+the consumer detaches a FIFO batch and frees each node after its handler finishes.
+The old pool could wrap and overwrite still-pending events. A condition variable
+signals an empty-to-nonempty transition without accumulating semaphore credits
+that force repeated empty worker passes after a burst.
+
+Storage grows with backlog; arbitrary lifecycle events are never discarded.
+Allocation failure is explicit and fatal rather than silent queue corruption.
+This does not bound an indefinitely stalled consumer's total memory use. Queue
+initialization and event-worker thread creation now propagate failures to startup.
+
+Regressions hold 40,000 pending events (past the old pool's overwrite threshold),
+check detached-batch ownership while new events arrive, and concurrently produce
+and consume 60,000 events from three threads. They verify exact counts and order
+within each producer, including wakeups after the queue empties.

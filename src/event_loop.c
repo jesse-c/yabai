@@ -1760,25 +1760,47 @@ static EVENT_HANDLER(DAEMON_MESSAGE)
 }
 #pragma clang diagnostic pop
 
+static bool event_loop_init(struct event_loop *event_loop)
+{
+    event_loop->head = NULL;
+    event_loop->tail = NULL;
+    if (pthread_mutex_init(&event_loop->lock, NULL) != 0) return false;
+    if (pthread_cond_init(&event_loop->ready, NULL) != 0) {
+        pthread_mutex_destroy(&event_loop->lock);
+        return false;
+    }
+    event_loop->is_running = true;
+    return true;
+}
+
+// Transfer ownership of a whole batch. Nodes remain valid until the consumer
+// finishes with them, regardless of how many subsequent events producers post.
+static struct event *event_loop_take(struct event_loop *event_loop, bool wait)
+{
+    pthread_mutex_lock(&event_loop->lock);
+    while (wait && !event_loop->head && event_loop->is_running) {
+        pthread_cond_wait(&event_loop->ready, &event_loop->lock);
+    }
+    struct event *events = event_loop->head;
+    event_loop->head = NULL;
+    event_loop->tail = NULL;
+    pthread_mutex_unlock(&event_loop->lock);
+    return events;
+}
+
 static void *event_loop_run(void *context)
 {
-    struct event *head, *next;
     struct event_loop *event_loop = context;
 
-    while (event_loop->is_running) {
+    for (;;) {
+        struct event *event = event_loop_take(event_loop, true);
+        if (!event) break;
         NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 
-        for (;;) {
+        while (event) {
             profile_begin();
-
-            do {
-                head = __atomic_load_n(&event_loop->head, __ATOMIC_RELAXED);
-                next = __atomic_load_n(&head->next, __ATOMIC_RELAXED);
-                if (!next) goto empty;
-            } while (!__sync_bool_compare_and_swap(&event_loop->head, head, next));
-
-            switch (__atomic_load_n(&next->type, __ATOMIC_RELAXED)) {
-#define EVENT_TYPE_ENTRY(value) case value: EVENT_HANDLER_##value(__atomic_load_n(&next->context, __ATOMIC_RELAXED), __atomic_load_n(&next->param1, __ATOMIC_RELAXED)); break;
+            switch (event->type) {
+#define EVENT_TYPE_ENTRY(value) case value: EVENT_HANDLER_##value(event->context, event->param1); break;
                 EVENT_TYPE_LIST
 #undef EVENT_TYPE_ENTRY
             }
@@ -1787,11 +1809,12 @@ static void *event_loop_run(void *context)
             ts_reset();
 
             profile_end_and_print();
+            struct event *next = event->next;
+            free(event);
+            event = next;
         }
 
-empty:
         [pool drain];
-        sem_wait(event_loop->semaphore);
     }
 
     return NULL;
@@ -1799,39 +1822,28 @@ empty:
 
 void event_loop_post(struct event_loop *event_loop, enum event_type type, void *context, int param1)
 {
-    bool success;
-    struct event *tail, *new_tail;
+    struct event *event = malloc(sizeof(*event));
+    if (!event) error("yabai: could not allocate event; refusing to drop lifecycle events\n");
+    *event = (struct event) { .type = type, .context = context, .param1 = param1 };
 
-    new_tail = memory_pool_push(&event_loop->pool, sizeof(struct event));
-    __atomic_store_n(&new_tail->type, type, __ATOMIC_RELEASE);
-    __atomic_store_n(&new_tail->param1, param1, __ATOMIC_RELEASE);
-    __atomic_store_n(&new_tail->context, context, __ATOMIC_RELEASE);
-    __atomic_store_n(&new_tail->next, NULL, __ATOMIC_RELEASE);
-    __asm__ __volatile__ ("" ::: "memory");
-
-    do {
-        tail = __atomic_load_n(&event_loop->tail, __ATOMIC_RELAXED);
-        success = __sync_bool_compare_and_swap(&tail->next, NULL, new_tail);
-    } while (!success);
-    __sync_bool_compare_and_swap(&event_loop->tail, tail, new_tail);
-
-    sem_post(event_loop->semaphore);
+    pthread_mutex_lock(&event_loop->lock);
+    bool wake = !event_loop->head;
+    if (event_loop->tail) event_loop->tail->next = event;
+    else event_loop->head = event;
+    event_loop->tail = event;
+    if (wake) pthread_cond_signal(&event_loop->ready);
+    pthread_mutex_unlock(&event_loop->lock);
 }
 
 bool event_loop_begin(struct event_loop *event_loop)
 {
-    if (!memory_pool_init(&event_loop->pool, KILOBYTES(512))) return false;
-
-    event_loop->semaphore = sem_open("yabai_event_loop_semaphore", O_CREAT, 0600, 0);
-    sem_unlink("yabai_event_loop_semaphore");
-    if (event_loop->semaphore == SEM_FAILED) return false;
-
-    event_loop->head = memory_pool_push(&event_loop->pool, sizeof(struct event));
-    event_loop->head->next = NULL;
-    event_loop->tail = event_loop->head;
-
-    event_loop->is_running = true;
-    pthread_create(&event_loop->thread, NULL, &event_loop_run, event_loop);
+    if (!event_loop_init(event_loop)) return false;
+    if (pthread_create(&event_loop->thread, NULL, &event_loop_run, event_loop) != 0) {
+        event_loop->is_running = false;
+        pthread_cond_destroy(&event_loop->ready);
+        pthread_mutex_destroy(&event_loop->lock);
+        return false;
+    }
 
     return true;
 }
