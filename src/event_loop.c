@@ -679,6 +679,7 @@ static void validate_windows_after_focus(uint32_t focused_window_id, bool is_ret
 
     table_for (struct window *window, g_window_manager.window, {
         if (window->id != focused_window_id &&
+            (!is_retry || window->owner_query_retry_pending) &&
             window_manager_find_managed_window(&g_window_manager, window)) {
             window_list[window_count++] = window->id;
         }
@@ -693,11 +694,17 @@ static void validate_windows_after_focus(uint32_t focused_window_id, bool is_ret
         }
 
         int owner = 0;
+        window->owner_query_retry_pending = false;
         CGError result = SLSGetWindowOwner(g_connection, window->id, &owner);
         if (result == kCGErrorSuccess) {
             if (owner == window->application->connection) continue;
-        } else if (!is_retry) {
-            retry_required = true;
+        } else {
+            // An API error is not evidence that the window disappeared. Retry
+            // only this window once; a later focus change may try again.
+            if (!is_retry) {
+                window->owner_query_retry_pending = true;
+                retry_required = true;
+            }
             continue;
         }
 
