@@ -1,0 +1,583 @@
+{"kind": "start", "wall": 1791592161.510773, "original_debug": "off"}
+{"kind": "snapshot", "t": 0.0, "yabai": [{"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 12.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "vertical", "split-child": "first_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}, {"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 903.0, "y": 52.0, "w": 881.0, "h": 1104.0}, "space": 2, "split-type": "vertical", "split-child": "second_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 903, "Height": 1104, "Y": 52, "Width": 881}, "onscreen": true}, {"app": "Ghostty", "id": 564, "bounds": {"X": 12, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": true}]}
+{"kind": "event", "t": 0.201, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 0.402, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 0.606, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 0.856, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 1.085, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 1.085, "line": "EVENT_HANDLER_DAEMON_MESSAGE: config debug_output"}
+{"kind": "event", "t": 1.284, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 1.497, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 1.708, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 1.956, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 2.159, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 2.39, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 2.6, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 2.818, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 3.041, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 3.238, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 3.456, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 3.656, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 3.901, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 4.105, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 4.312, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 4.518, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 4.726, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 4.938, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 5.147, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 5.369, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 5.6, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 5.831, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 6.071, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 6.286, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 6.518, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 6.751, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 7.009, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 7.239, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 7.477, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 7.706, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 7.958, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 8.196, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 8.43, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 8.669, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 8.917, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 9.153, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 9.383, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 9.615, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 9.866, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 10.105, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 10.34, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 10.577, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 10.814, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 11.062, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 11.298, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 11.529, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 11.765, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 12.012, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 12.215, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 12.425, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 12.632, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 12.845, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 13.063, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 13.276, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 13.517, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 13.752, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 14.003, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 14.237, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 14.473, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 14.71, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 14.969, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 15.2, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 15.438, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 15.67, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 15.929, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 16.159, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 16.392, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 16.614, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 16.86, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 17.124, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 17.379, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 17.636, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 17.869, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 18.105, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 18.35, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 18.59, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 18.821, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 19.057, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 19.292, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 19.535, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 19.769, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 20.028, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 20.259, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 20.496, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 20.711, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 20.957, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 21.199, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 21.435, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 21.659, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 21.926, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 22.161, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 22.394, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 22.65, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 22.907, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 23.131, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 23.368, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 23.602, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 23.837, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 24.086, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 24.314, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 24.547, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 24.782, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 25.058, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 25.293, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 25.523, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 25.76, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 26.016, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 26.247, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 26.479, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 26.716, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 26.979, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 27.214, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 27.452, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 27.692, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 27.934, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 28.172, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 28.403, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 28.64, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 28.9, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 29.13, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 29.369, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 29.606, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 29.844, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 30.084, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 30.339, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 30.572, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 30.804, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 31.057, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 31.311, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 31.574, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 31.818, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 32.06, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 32.295, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 32.522, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 32.731, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 32.989, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 33.219, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 33.451, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 33.695, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 33.937, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 34.169, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 34.403, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 34.633, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 34.873, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 35.126, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 35.363, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 35.593, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 35.818, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 36.068, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 36.318, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 36.553, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 36.8, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 37.048, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 37.284, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 37.532, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 37.768, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 38.021, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 38.273, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 38.525, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 38.786, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 39.022, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 39.252, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 39.514, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 39.747, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 39.998, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 40.235, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 40.464, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 40.7, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 40.954, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 41.186, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 41.421, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 41.665, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 41.931, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 42.161, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 42.397, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 42.631, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 42.884, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 43.119, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 43.354, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 43.586, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 43.823, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 44.081, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 44.314, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 44.547, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 44.756, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 45.018, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 45.255, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 45.492, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 45.721, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 45.982, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 46.214, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 46.443, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 46.674, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 46.916, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 47.138, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 47.375, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 47.606, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 47.855, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 48.097, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 48.347, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 48.58, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 48.814, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 49.064, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 49.299, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 49.547, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 49.781, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 50.042, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 50.273, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 50.509, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 50.726, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 51.001, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 51.232, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 51.466, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 51.712, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 51.966, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 52.193, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 52.423, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 52.656, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 52.902, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 53.137, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 53.376, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 53.609, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 53.852, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 54.102, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 54.348, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 54.585, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 54.827, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 55.072, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 55.312, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 55.542, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 55.782, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 56.034, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 56.269, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 56.501, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 56.725, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 56.974, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 57.228, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 57.476, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 57.719, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 57.956, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 58.189, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 58.422, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 58.664, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 58.902, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 59.113, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 59.343, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 59.575, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 59.796, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 60.051, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 60.286, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 60.514, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 60.747, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 60.993, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 61.236, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 61.469, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 61.698, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 61.948, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 62.18, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 62.414, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 62.647, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 62.897, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 63.135, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 63.362, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 63.596, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 63.822, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 64.064, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 64.301, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 64.539, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 64.781, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 65.029, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 65.256, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 65.491, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 65.718, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 65.973, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 66.206, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 66.439, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 66.673, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 66.924, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 67.152, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 67.381, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 67.606, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 67.852, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 68.101, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 68.331, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 68.565, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 68.774, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 69.026, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 69.26, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 69.501, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 69.747, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 70.005, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 70.235, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 70.468, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 70.702, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 70.954, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 71.223, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 71.479, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 71.726, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 71.956, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 72.193, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 72.424, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 72.657, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 72.89, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 73.122, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 73.354, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 73.564, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 73.776, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 73.988, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 74.199, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 74.409, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 74.619, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 74.835, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 75.074, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 75.305, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 75.545, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 75.781, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 76.015, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 76.251, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 76.484, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 76.71, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 76.942, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 77.166, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 77.401, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 77.636, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 77.839, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 78.08, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 78.313, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 78.553, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 78.795, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 79.04, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 79.272, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 79.51, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 79.749, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 80.004, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 80.232, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 80.472, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 80.711, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 80.975, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 81.201, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 81.435, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 81.667, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 81.931, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 82.167, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 82.402, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 82.643, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 82.903, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 83.147, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 83.384, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 83.615, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 83.855, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 84.098, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 84.341, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 84.576, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 84.809, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 85.068, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 85.293, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 85.528, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 85.76, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 86.008, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 86.236, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 86.477, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 86.71, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 86.968, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 87.226, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 87.477, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 87.727, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 87.951, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 88.166, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 88.401, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 88.638, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 88.892, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 89.126, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 89.359, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 89.594, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 89.819, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 90.075, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 90.312, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 90.539, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 90.762, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 91.001, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 91.249, "line": "EVENT_HANDLER_MOUSE_DOWN: 625.75, 791.19"}
+{"kind": "event", "t": 91.249, "line": "EVENT_HANDLER_MOUSE_UP: 625.75, 791.19"}
+{"kind": "event", "t": 91.249, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 91.468, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 91.727, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 91.938, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 92.15, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 92.385, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 92.621, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 92.863, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 93.108, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 93.108, "yabai": [{"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 12.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "vertical", "split-child": "first_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}, {"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 903.0, "y": 52.0, "w": 881.0, "h": 1104.0}, "space": 2, "split-type": "vertical", "split-child": "second_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 12, "Height": 1104, "Y": 52, "Width": 895}, "onscreen": true}, {"app": "Ghostty", "id": 564, "bounds": {"X": 12, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": 0}]}
+{"kind": "event", "t": 93.346, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 93.346, "yabai": [{"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 12.0, "y": 52.0, "w": 1770.0, "h": 1104.0}, "space": 2, "split-type": "none", "split-child": "second_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}, {"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 12.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "none", "split-child": "none", "has-ax-reference": true, "is-visible": false, "is-minimized": false, "is-hidden": true, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 12, "Height": 1104, "Y": 52, "Width": 1770}, "onscreen": true}, {"app": "Ghostty", "id": 564, "bounds": {"X": 12, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": 0}]}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Emacs (91476)"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_APPLICATION_HIDDEN: Ghostty"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_SLS_WINDOW_ORDERED: 518"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Emacs 518"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_RESIZED: Emacs 518"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_MOVED:DEBOUNCED Emacs 518"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Emacs 518"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_RESIZED:DEBOUNCED Emacs 518"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 93.548, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 93.777, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 94.024, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 94.024, "yabai": [{"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 903.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "vertical", "split-child": "second_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}, {"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 12.0, "y": 52.0, "w": 881.0, "h": 1104.0}, "space": 2, "split-type": "vertical", "split-child": "first_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 12, "Height": 1104, "Y": 52, "Width": 881}, "onscreen": true}, {"app": "Ghostty", "id": 564, "bounds": {"X": 903, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": true}]}
+{"kind": "event", "t": 94.23, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Ghostty (719)"}
+{"kind": "event", "t": 94.23, "line": "EVENT_HANDLER_APPLICATION_VISIBLE: Ghostty"}
+{"kind": "event", "t": 94.23, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 94.23, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 94.23, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 94.23, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 94.23, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Emacs 518"}
+{"kind": "event", "t": 94.23, "line": "EVENT_HANDLER_WINDOW_RESIZED: Emacs 518"}
+{"kind": "event", "t": 94.23, "line": "EVENT_HANDLER_WINDOW_MOVED: Ghostty 564"}
+{"kind": "event", "t": 94.23, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 94.451, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 94.659, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 94.9, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 95.141, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 95.346, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 95.586, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 95.586, "yabai": [{"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 12.0, "y": 52.0, "w": 1770.0, "h": 1104.0}, "space": 2, "split-type": "none", "split-child": "second_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}, {"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 903.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "none", "split-child": "none", "has-ax-reference": true, "is-visible": false, "is-minimized": false, "is-hidden": true, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 12, "Height": 1104, "Y": 52, "Width": 1770}, "onscreen": true}, {"app": "Ghostty", "id": 564, "bounds": {"X": 903, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": 0}]}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Emacs (91476)"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_APPLICATION_HIDDEN: Ghostty"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_SLS_WINDOW_ORDERED: 518"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Emacs 518"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_WINDOW_RESIZED: Emacs 518"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 95.789, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 96.006, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 96.219, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 96.219, "yabai": [{"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 12.0, "y": 52.0, "w": 1770.0, "h": 1104.0}, "space": 2, "split-type": "none", "split-child": "none", "has-ax-reference": true, "is-visible": false, "is-minimized": false, "is-hidden": true, "is-floating": false}, {"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 903.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "none", "split-child": "none", "has-ax-reference": true, "is-visible": false, "is-minimized": false, "is-hidden": true, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 12, "Height": 1104, "Y": 52, "Width": 1770}, "onscreen": 0}, {"app": "Ghostty", "id": 564, "bounds": {"X": 903, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": 0}]}
+{"kind": "event", "t": 96.417, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Finder (773)"}
+{"kind": "event", "t": 96.417, "line": "EVENT_HANDLER_APPLICATION_HIDDEN: Emacs"}
+{"kind": "event", "t": 96.417, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 96.651, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 96.651, "yabai": [{"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 12.0, "y": 52.0, "w": 1770.0, "h": 1104.0}, "space": 2, "split-type": "none", "split-child": "none", "has-ax-reference": true, "is-visible": false, "is-minimized": false, "is-hidden": true, "is-floating": false}, {"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 903.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "none", "split-child": "none", "has-ax-reference": true, "is-visible": false, "is-minimized": false, "is-hidden": true, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 12, "Height": 1104, "Y": 52, "Width": 1770}, "onscreen": true}, {"app": "Ghostty", "id": 564, "bounds": {"X": 903, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": 0}]}
+{"kind": "event", "t": 96.889, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Emacs (91476)"}
+{"kind": "event", "t": 96.889, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 96.889, "yabai": [{"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 12.0, "y": 52.0, "w": 1770.0, "h": 1104.0}, "space": 2, "split-type": "none", "split-child": "second_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}, {"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 903.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "none", "split-child": "none", "has-ax-reference": true, "is-visible": false, "is-minimized": false, "is-hidden": true, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 12, "Height": 1104, "Y": 52, "Width": 1770}, "onscreen": true}, {"app": "Ghostty", "id": 564, "bounds": {"X": 903, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": 0}]}
+{"kind": "event", "t": 97.106, "line": "EVENT_HANDLER_APPLICATION_VISIBLE: Emacs"}
+{"kind": "event", "t": 97.106, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 97.106, "yabai": [{"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 903.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "vertical", "split-child": "second_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}, {"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 12.0, "y": 52.0, "w": 1770.0, "h": 1104.0}, "space": 2, "split-type": "vertical", "split-child": "first_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 12, "Height": 1104, "Y": 52, "Width": 881}, "onscreen": true}, {"app": "Ghostty", "id": 564, "bounds": {"X": 903, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": true}]}
+{"kind": "event", "t": 97.385, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Ghostty (719)"}
+{"kind": "event", "t": 97.385, "line": "EVENT_HANDLER_APPLICATION_VISIBLE: Ghostty"}
+{"kind": "event", "t": 97.385, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 97.385, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 97.385, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 97.385, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 97.385, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 97.385, "yabai": [{"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 903.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "vertical", "split-child": "second_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}, {"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 12.0, "y": 52.0, "w": 881.0, "h": 1104.0}, "space": 2, "split-type": "vertical", "split-child": "first_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 12, "Height": 1104, "Y": 52, "Width": 881}, "onscreen": true}, {"app": "Ghostty", "id": 564, "bounds": {"X": 903, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": true}]}
+{"kind": "event", "t": 97.605, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Emacs 518"}
+{"kind": "event", "t": 97.605, "line": "EVENT_HANDLER_WINDOW_RESIZED: Emacs 518"}
+{"kind": "event", "t": 97.605, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 97.84, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 98.082, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 98.082, "yabai": [{"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 12.0, "y": 52.0, "w": 881.0, "h": 1104.0}, "space": 2, "split-type": "vertical", "split-child": "first_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}, {"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 903.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "vertical", "split-child": "second_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 12, "Height": 1104, "Y": 52, "Width": 881}, "onscreen": true}, {"app": "Ghostty", "id": 564, "bounds": {"X": 903, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": true}]}
+{"kind": "event", "t": 98.305, "line": "EVENT_HANDLER_MOUSE_DOWN: 484.90, 808.96"}
+{"kind": "event", "t": 98.305, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Emacs (91476)"}
+{"kind": "event", "t": 98.305, "line": "EVENT_HANDLER_SLS_WINDOW_ORDERED: 518"}
+{"kind": "event", "t": 98.305, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 98.305, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 98.305, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 98.305, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: Ghostty 564"}
+{"kind": "event", "t": 98.305, "line": "EVENT_HANDLER_MOUSE_UP: 484.90, 808.96"}
+{"kind": "event", "t": 98.305, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 98.526, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 98.763, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 98.99, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 99.228, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 99.461, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 99.678, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 99.894, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 100.117, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 100.35, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 100.562, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 100.767, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 100.977, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 101.181, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 101.181, "yabai": [{"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 12.0, "y": 52.0, "w": 881.0, "h": 1104.0}, "space": 2, "split-type": "vertical", "split-child": "first_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}, {"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 903.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "vertical", "split-child": "second_child", "has-ax-reference": true, "is-visible": true, "is-minimized": false, "is-hidden": false, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 713, "Height": 1104, "Y": 52, "Width": 881}, "onscreen": true}, {"app": "Ghostty", "id": 564, "bounds": {"X": 1604, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": true}]}
+{"kind": "event", "t": 101.416, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "snapshot", "t": 101.416, "yabai": [{"id": 518, "pid": 91476, "app": "Emacs", "frame": {"x": 12.0, "y": 52.0, "w": 881.0, "h": 1104.0}, "space": 2, "split-type": "vertical", "split-child": "first_child", "has-ax-reference": true, "is-visible": false, "is-minimized": false, "is-hidden": false, "is-floating": false}, {"id": 564, "pid": 719, "app": "Ghostty", "frame": {"x": 903.0, "y": 52.0, "w": 885.0, "h": 1105.0}, "space": 2, "split-type": "vertical", "split-child": "second_child", "has-ax-reference": true, "is-visible": false, "is-minimized": false, "is-hidden": false, "is-floating": false}], "cg": [{"app": "Emacs", "id": 518, "bounds": {"X": 12, "Height": 1104, "Y": 52, "Width": 881}, "onscreen": 0}, {"app": "Ghostty", "id": 564, "bounds": {"X": 903, "Height": 1105, "Y": 52, "Width": 885}, "onscreen": 0}]}
+{"kind": "event", "t": 101.751, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Safari (25480)"}
+{"kind": "event", "t": 101.751, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 102.311, "line": "EVENT_HANDLER_SPACE_CHANGED: 1"}
+{"kind": "event", "t": 102.311, "line": "EVENT_HANDLER_SLS_WINDOW_ORDERED: 300"}
+{"kind": "event", "t": 102.311, "line": "EVENT_HANDLER_WINDOW_RESIZED: Safari 300"}
+{"kind": "event", "t": 102.311, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 102.512, "line": "EVENT_HANDLER_WINDOW_RESIZED: Notes 884"}
+{"kind": "event", "t": 102.512, "line": "EVENT_HANDLER_WINDOW_MOVED:DEBOUNCED Notes 884"}
+{"kind": "event", "t": 102.512, "line": "EVENT_HANDLER_WINDOW_RESIZED: calibre 730"}
+{"kind": "event", "t": 102.512, "line": "EVENT_HANDLER_WINDOW_MOVED:DEBOUNCED calibre 730"}
+{"kind": "event", "t": 102.512, "line": "EVENT_HANDLER_WINDOW_RESIZED:DEBOUNCED calibre 730"}
+{"kind": "event", "t": 102.512, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 102.728, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 102.944, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 103.158, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 103.38, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 103.608, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 103.823, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 104.232, "line": "EVENT_HANDLER_MOUSE_DOWN: 458.62, 1063.58"}
+{"kind": "event", "t": 104.232, "line": "EVENT_HANDLER_MOUSE_UP: 458.62, 1063.58"}
+{"kind": "event", "t": 104.232, "line": "EVENT_HANDLER_SLS_WINDOW_ORDERED: 884"}
+{"kind": "event", "t": 104.232, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Notes (37994)"}
+{"kind": "event", "t": 104.232, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 104.232, "line": "EVENT_HANDLER_DAEMON_MESSAGE: window --toggle float"}
+{"kind": "event", "t": 104.232, "line": "EVENT_HANDLER_WINDOW_RESIZED: Safari 300"}
+{"kind": "event", "t": 104.232, "line": "EVENT_HANDLER_DAEMON_MESSAGE: window --grid 4:4:1:1:2:2"}
+{"kind": "event", "t": 104.546, "line": "EVENT_HANDLER_WINDOW_RESIZED: Notes 884"}
+{"kind": "event", "t": 104.546, "line": "EVENT_HANDLER_WINDOW_MOVED:DEBOUNCED Notes 884"}
+{"kind": "event", "t": 104.546, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 104.925, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 105.233, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 105.548, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 105.877, "line": "EVENT_HANDLER_WINDOW_RESIZED: Notes 884"}
+{"kind": "event", "t": 105.877, "line": "EVENT_HANDLER_WINDOW_MOVED: Notes 884"}
+{"kind": "event", "t": 105.877, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 106.192, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Safari (25480)"}
+{"kind": "event", "t": 106.192, "line": "EVENT_HANDLER_SLS_WINDOW_DESTROYED: 884"}
+{"kind": "event", "t": 106.192, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: Safari (25480)"}
+{"kind": "event", "t": 106.192, "line": "EVENT_HANDLER_SLS_WINDOW_DESTROYED: 884"}
+{"kind": "event", "t": 106.192, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 106.416, "line": "EVENT_HANDLER_APPLICATION_TERMINATED: Notes (37994)"}
+{"kind": "event", "t": 106.416, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 106.64, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 106.899, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 107.139, "line": "EVENT_HANDLER_MOUSE_DOWN: 1200.16, 234.95"}
+{"kind": "event", "t": 107.139, "line": "EVENT_HANDLER_MOUSE_DRAGGED: 1200.16, 234.82"}
+{"kind": "event", "t": 107.139, "line": "EVENT_HANDLER_SLS_WINDOW_ORDERED: 730"}
+{"kind": "event", "t": 107.139, "line": "EVENT_HANDLER_APPLICATION_FRONT_SWITCHED: calibre (33905)"}
+{"kind": "event", "t": 107.139, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 107.417, "line": "EVENT_HANDLER_MOUSE_UP: 1200.16, 234.82"}
+{"kind": "event", "t": 107.417, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 107.648, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 107.911, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 108.136, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 108.437, "line": "EVENT_HANDLER_MOUSE_DOWN: 1147.57, 404.48"}
+{"kind": "event", "t": 108.437, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 108.437, "line": "EVENT_HANDLER_MOUSE_UP: 1147.57, 404.48"}
+{"kind": "event", "t": 108.437, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 108.437, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 108.668, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 108.668, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 108.668, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 108.668, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 108.668, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 108.915, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 109.137, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 109.137, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 109.137, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 109.362, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "event", "t": 109.583, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 109.583, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 109.583, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 109.583, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 109.583, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 109.583, "line": "EVENT_HANDLER_WINDOW_TITLE_CHANGED: calibre 730"}
+{"kind": "event", "t": 109.583, "line": "EVENT_HANDLER_DAEMON_MESSAGE: query --windows id,pid,app,frame,space,split-type,split-child,is-visible,is-floating,is-hidden,is-minimized,has-ax-reference"}
+{"kind": "end", "t": 109.821}

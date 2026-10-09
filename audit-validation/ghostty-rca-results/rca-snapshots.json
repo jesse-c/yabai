@@ -1,0 +1,385 @@
+[
+  {
+    "t": 219.975,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 52.0,
+          "w": 885.0,
+          "h": 1105.0
+        },
+        "hidden": false
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 1105,
+          "Y": 52,
+          "Width": 885
+        },
+        "onscreen": true
+      }
+    ]
+  },
+  {
+    "t": 220.21,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 52.0,
+          "w": 885.0,
+          "h": 1105.0
+        },
+        "hidden": false
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 1105,
+          "Y": 52,
+          "Width": 885
+        },
+        "onscreen": true
+      }
+    ]
+  },
+  {
+    "t": 221.067,
+    "ghostty_yabai": [],
+    "ghostty_actual": []
+  },
+  {
+    "t": 221.293,
+    "ghostty_yabai": [
+      {
+        "id": 823,
+        "frame": {
+          "x": 903.0,
+          "y": 52.0,
+          "w": 885.0,
+          "h": 1105.0
+        },
+        "hidden": false
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 823,
+        "bounds": {
+          "X": 903,
+          "Height": 1105,
+          "Y": 52,
+          "Width": 885
+        },
+        "onscreen": true
+      }
+    ]
+  },
+  {
+    "t": 222.14,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 52.0,
+          "w": 885.0,
+          "h": 1105.0
+        },
+        "hidden": false
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 1105,
+          "Y": 52,
+          "Width": 885
+        },
+        "onscreen": true
+      }
+    ]
+  },
+  {
+    "t": 222.565,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 52.0,
+          "w": 885.0,
+          "h": 1105.0
+        },
+        "hidden": false
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 1105,
+          "Y": 52,
+          "Width": 885
+        },
+        "onscreen": 0
+      }
+    ]
+  },
+  {
+    "t": 222.792,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 52.0,
+          "w": 885.0,
+          "h": 1105.0
+        },
+        "hidden": true
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 1105,
+          "Y": 52,
+          "Width": 885
+        },
+        "onscreen": 0
+      }
+    ]
+  },
+  {
+    "t": 223.703,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 52.0,
+          "w": 885.0,
+          "h": 1105.0
+        },
+        "hidden": false
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 549,
+          "Y": 608,
+          "Width": 885
+        },
+        "onscreen": true
+      }
+    ]
+  },
+  {
+    "t": 223.987,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 608.0,
+          "w": 885.0,
+          "h": 549.0
+        },
+        "hidden": false
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 549,
+          "Y": 608,
+          "Width": 885
+        },
+        "onscreen": true
+      }
+    ]
+  },
+  {
+    "t": 226.204,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 608.0,
+          "w": 885.0,
+          "h": 549.0
+        },
+        "hidden": false
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 549,
+          "Y": 608,
+          "Width": 885
+        },
+        "onscreen": true
+      }
+    ]
+  },
+  {
+    "t": 227.561,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 608.0,
+          "w": 885.0,
+          "h": 549.0
+        },
+        "hidden": false
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 549,
+          "Y": 608,
+          "Width": 885
+        },
+        "onscreen": true
+      }
+    ]
+  },
+  {
+    "t": 227.965,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 608.0,
+          "w": 885.0,
+          "h": 549.0
+        },
+        "hidden": true
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 549,
+          "Y": 608,
+          "Width": 885
+        },
+        "onscreen": 0
+      }
+    ]
+  },
+  {
+    "t": 229.11,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 608.0,
+          "w": 885.0,
+          "h": 549.0
+        },
+        "hidden": true
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 549,
+          "Y": 608,
+          "Width": 885
+        },
+        "onscreen": true
+      }
+    ]
+  },
+  {
+    "t": 229.352,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 608.0,
+          "w": 885.0,
+          "h": 549.0
+        },
+        "hidden": false
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 549,
+          "Y": 608,
+          "Width": 885
+        },
+        "onscreen": true
+      }
+    ]
+  },
+  {
+    "t": 230.911,
+    "ghostty_yabai": [
+      {
+        "id": 564,
+        "frame": {
+          "x": 903.0,
+          "y": 608.0,
+          "w": 885.0,
+          "h": 549.0
+        },
+        "hidden": false
+      }
+    ],
+    "ghostty_actual": [
+      {
+        "id": 564,
+        "bounds": {
+          "X": 903,
+          "Height": 549,
+          "Y": 608,
+          "Width": 885
+        },
+        "onscreen": true
+      }
+    ]
+  }
+]

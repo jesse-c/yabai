@@ -455,6 +455,37 @@ static EVENT_HANDLER(APPLICATION_FRONT_SWITCHED)
 }
 #pragma clang diagnostic pop
 
+// AX keeps references to inactive native tabs. Check space membership including
+// hidden windows: the application may not be ordered in yet when this event runs.
+struct application_space_snapshot
+{
+    uint64_t sid;
+    uint32_t *windows;
+    int count;
+    bool valid;
+};
+
+static uint64_t application_window_space_in_snapshot(struct window *window, struct application_space_snapshot *snapshots, int *snapshot_count)
+{
+    uint64_t sid = window_space(window->id);
+    if (!sid) return 0;
+
+    int index = 0;
+    while (index < *snapshot_count && snapshots[index].sid != sid) ++index;
+    if (index == *snapshot_count) {
+        struct application_space_snapshot *snapshot = &snapshots[(*snapshot_count)++];
+        snapshot->sid = sid;
+        snapshot->valid = space_window_list_checked(sid, &snapshot->count, true, &snapshot->windows);
+    }
+
+    struct application_space_snapshot *snapshot = &snapshots[index];
+    if (!snapshot->valid) return 0;
+    for (int i = 0; i < snapshot->count; ++i) {
+        if (snapshot->windows[i] == window->id) return sid;
+    }
+    return 0;
+}
+
 static EVENT_HANDLER(APPLICATION_VISIBLE)
 {
     struct application *application = window_manager_find_application(&g_window_manager, (pid_t)(intptr_t) context);
@@ -469,12 +500,16 @@ static EVENT_HANDLER(APPLICATION_VISIBLE)
 
     int view_count = 0;
     struct view **view_list = ts_alloc_list(struct view *, window_count);
+    int snapshot_count = 0;
+    struct application_space_snapshot *snapshots = ts_alloc_list(struct application_space_snapshot, window_count);
 
     for (int i = 0; i < window_count; ++i) {
         struct window *window = window_list[i];
 
         if (window_manager_should_manage_window(window) && !window_manager_find_managed_window(&g_window_manager, window)) {
-            struct view *view = space_manager_find_view(&g_space_manager, window_space(window->id));
+            uint64_t sid = application_window_space_in_snapshot(window, snapshots, &snapshot_count);
+            if (!sid) continue;
+            struct view *view = space_manager_find_view(&g_space_manager, sid);
             if (view->layout == VIEW_FLOAT) continue;
 
             //
